@@ -1,0 +1,49 @@
+
+body
+{
+    background-color: aliceblue;
+}
+body 
+{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+h1
+{
+    color:brown;
+}
+
+#p1
+{
+    color: black;
+}
+
+#p2
+{
+    color:black
+}
+
+/*table*/
+table
+{
+    border-collapse: collapse;
+    background-color: aliceblue;
+    padding: 25px 50px 75px;
+}
+td, th 
+{
+    border:3px solid black;
+    color:black;
+}
+
+a
+{
+    text-decoration: none;
+    color:coral;
+}
+
+div
+{
+    
+}
+

@@ -1,0 +1,28 @@
+body
+{
+    background-color: darkseagreen;
+}
+body 
+{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#p1
+{
+    color:black;
+}
+
+h1
+{
+    color:dimgray;
+}
+h2
+{
+    color:darkslateblue;
+}
+/*gets rid of underline and changes color*/
+a
+{
+    text-decoration: none;
+    color:cornsilk;
+}
