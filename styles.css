@@ -12,25 +12,22 @@ body
     color:black;
 }
 
-h1
+#title
 {
     color:dimgray;
 }
-h2
+#sub
 {
     color:darkslateblue;
 }
 /*gets rid of underline and changes color*/
-a
+.assignments a
 {
     text-decoration: none;
     color:cornsilk;
 }
-a:hover
+.assignments a:hover
 {
     color:darkolivegreen;
 }
-div
-{
 
-}

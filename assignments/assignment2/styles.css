@@ -2,15 +2,22 @@
 body
 {
     background-color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    background: url(images/brackground\ grass.jpeg)
 }
-body 
+
+#info
 {
-    font-family:Arial, Helvetica, sans-serif
+    background: aliceblue;
+    width: 50%;
+    margin: auto;
+    padding: 3px;
+    border-radius: 3px;
 }
 
 #boof
 {
-    color:brown;
+    color:black;
 }
 #retrieve
 {
@@ -19,13 +26,17 @@ body
 
 #p1
 {
+   margin-right: 20%;
     color: black;
 }
 
 #p2
 {
+    margin-right: 20%;
     color:black
 }
+
+
 
 /*table*/
 table
@@ -40,7 +51,8 @@ td, th
     color:black;
 }
 
-a
+/*nav page*/
+#nav-page a
 {
     text-decoration: none;
     color:coral;
@@ -48,14 +60,34 @@ a
     background: whitesmoke;
     border-radius: 3px;
 }
-a:hover
+#nav-page a:hover
 {
     color:darkgoldenrod;
 }
+a
+{
+    text-decoration: none;
+    color:skyblue;
+    padding: 3px;
+    background: whitesmoke;
+    border-radius: 3px;
+}
+a:hover
+{
+    color:grey;
+}
 img
 {
+    padding: 5px;
+    margin: -5px;
     border: 3px solid black;
     border-radius: 3px;
+}
+
+.pirate
+{
+    color: blue;
+    font-size: 18px;
 }
 
 #pic
@@ -63,8 +95,5 @@ img
 
 }
 
-#info
-{
-    
-}
+
 
