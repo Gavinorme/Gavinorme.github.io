@@ -16,12 +16,13 @@ body
 {
     color:dimgray;
 }
+
 #sub
 {
     color:darkslateblue;
 }
 /*gets rid of underline and changes color*/
-.assignments a
+.assignments a /*classs instead of id for both the links*/
 {
     text-decoration: none;
     color:cornsilk;

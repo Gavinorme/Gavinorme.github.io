@@ -3,13 +3,13 @@ body
 {
     background-color: aliceblue;
     font-family:Arial, Helvetica, sans-serif;
-    background: url(images/brackground\ grass.jpeg)
+    background: url(images/brackground\ grass.jpeg) /*makes the website's background that picture*/
 }
 
 #info
 {
     background: aliceblue;
-    width: 50%;
+    width: 50%; /*shows the background image as half of the page in the background*/
     margin: auto;
     padding: 3px;
     border-radius: 3px;
@@ -60,10 +60,12 @@ td, th
     background: whitesmoke;
     border-radius: 3px;
 }
+
 #nav-page a:hover
 {
     color:darkgoldenrod;
 }
+
 a
 {
     text-decoration: none;
@@ -72,10 +74,12 @@ a
     background: whitesmoke;
     border-radius: 3px;
 }
+
 a:hover
 {
     color:grey;
 }
+
 img
 {
     padding: 5px;
@@ -84,16 +88,13 @@ img
     border-radius: 3px;
 }
 
-.pirate
+.pirate 
 {
     color: blue;
     font-size: 18px;
 }
 
-#pic
-{
 
-}
 
 
 
