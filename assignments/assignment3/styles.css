@@ -1,0 +1,68 @@
+/* Structure */
+body
+{
+    background-color: aliceblue;
+}
+#main-header
+{
+    background-color: aliceblue;
+}
+#KaChow
+{
+    color: red;
+}
+#main-info
+{
+    background-color: lightblue;
+}
+#main-footer
+{
+    background-color: lightgray;
+}
+.padding
+{
+    padding: 3px;
+    margin: auto;
+}
+.info
+{
+    border: 3px solid darkblue;
+    background: lightcyan;
+    display:inline-block;
+    margin-right: 150px;
+}
+.info header
+{
+    margin: 0 auto;
+}
+.racers
+{
+    border: 3px solid black;
+    display:inline-block
+}
+
+/* Main Nav */
+#main-nav ul
+{
+    padding-left: 0px;
+}
+#main-nav li
+{
+    list-style-type: none;
+    display:inline-block;
+}
+#main-nav a
+{
+    text-decoration: none;
+    color: black;
+}
+#main-nav a:hover
+{
+    color: lightcoral;
+}
+
+/* Images */
+.pics
+{
+    display:inline-block
+}
