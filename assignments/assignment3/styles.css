@@ -12,9 +12,6 @@ body
     border: 3px solid black;
 }
 
-
-/* comment things later */
-
 #main-content
 {
     background-color:red;
@@ -80,11 +77,6 @@ body
     padding-left: 0px;
 }
 
-
-/*#main-columns
-{
-    border: 3px solid black;
-}*/
 .grid
 {
     display: grid;
@@ -199,6 +191,4 @@ body
     {
         flex:1
     }
-
-
 }
