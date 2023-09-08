@@ -1,68 +1,405 @@
 /* Structure */
-body
-{
-    background-color: aliceblue;
-}
-#main-header
-{
-    background-color: aliceblue;
-}
-#KaChow
-{
-    color: red;
-}
-#main-info
+
+/*body
 {
     background-color: lightblue;
 }
-#main-footer
+
+#main-header 
 {
-    background-color: lightgray;
+    background-color: #ceb9a5;
+    text-align: center;
+    border: 3px solid black;
 }
-.padding
+
+*/
+/* comment things later */
+/*
+#main-content
 {
-    padding: 3px;
-    margin: auto;
+    background-color:red;
+    margin-right: -350px;
+    margin-left: 0px;
+    border: 3px solid black;
 }
-.info
+#mater
 {
-    border: 3px solid darkblue;
-    background: lightcyan;
-    display:inline-block;
-    margin-right: 150px;
+    margin-right: 25px;
+    margin-left: 0px;
+    padding: 25 50px;
+    background-color: brown;
+    border: 3px solid black;
 }
-.info header
-{
-    margin: 0 auto;
-}
+
 .racers
 {
     border: 3px solid black;
-    display:inline-block
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 25 50px;
+    padding: 25 25px;
 }
 
-/* Main Nav */
-#main-nav ul
+#r, #k
 {
+    border: 3px solid black;
+    margin-left: 25px;
     padding-left: 0px;
+    padding-right: 0px;
+}
+#ch
+{
+    border: 3px solid black;
+    margin-right: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.crew
+{
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 25 50px;
+    padding: 25 25px;
+}
+
+#m, #g
+{
+    border: 3px solid black;
+    margin-left: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#d
+{
+    border: 3px solid black;
+    margin-right: 25px;
+    padding-left: 0px;
+}
+
+
+#main-columns
+{
+    border: 3px solid black;
+}
+.grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#main-footer
+{
+    background-color: bisque;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.padded-area
+{
+    padding: 5px;
+    margin: auto;
+}
+
+.info
+{
+    border: 3px solid black;
+    background: #885e4b;
+    padding: 25px;
+    margin: -5px;
+   
+}
+.info header 
+{
+    background-color: #e5ddd5;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+*/
+/* Main Navigation */
+/*#main-nav ul
+{
+    
+    font-size: 1.5em;
+    border: 3px solid black;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    text-align: center;
+   
+    
 }
 #main-nav li
 {
     list-style-type: none;
-    display:inline-block;
+    padding: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    
 }
 #main-nav a
 {
     text-decoration: none;
-    color: black;
+    color:black;
 }
 #main-nav a:hover
 {
-    color: lightcoral;
+    border-bottom: 1px solid lightyellow;
+}
+*/
+/* Typography 
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Images 
+.flex-container
+{
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.columns
+{
+    display:flex;
+}
+.col1of2
+{
+    flex:1
+}
+
+/*Larger Resolutions (mobile devices)
+@media only screen and (max-width: 768px)
+{
+    body
+    {
+        background-color: lightblue;
+    }
+    #main-nav li
+    {
+    display:inline-block;
+    }
+    .columns
+    {
+        display:flex;
+    }
+    .col1of2
+    {
+        flex:1
+    }
+
+}*/
+/* Structure */
+
+body
+{
+    background-color: lightblue;
+}
+
+#main-header 
+{
+    background-color: #ceb9a5;
+    text-align: center;
+    border: 3px solid black;
+}
+
+
+/* comment things later */
+
+#main-content
+{
+    background-color:red;
+    margin-right: -350px;
+    margin-left: 0px;
+    border: 3px solid black;
+}
+#mater
+{
+    margin-right: 0px;
+    margin-left: 375px;
+    padding: 25 50px;
+    background-color: brown;
+    border: 3px solid black;
+}
+
+.racers
+{
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 25 50px;
+    padding: 25 25px;
+}
+
+#r, #k
+{
+    border: 3px solid black;
+    margin-left: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#ch
+{
+    border: 3px solid black;
+    margin-right: 25px;
+    padding-left: 0px;
+}
+
+.crew
+{
+    
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 25 50px;
+    padding: 25 25px;
+}
+
+#m, #g
+{
+    border: 3px solid black;
+    margin-left: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#d
+{
+    border: 3px solid black;
+    margin-right: 25px;
+    padding-left: 0px;
+}
+
+
+/*#main-columns
+{
+    border: 3px solid black;
+}*/
+.grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#main-footer
+{
+    background-color: bisque;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.padded-area
+{
+    padding: 5px;
+    margin: auto;
+}
+
+.info
+{
+    border: 3px solid black;
+    background: #885e4b;
+    padding: 25px;
+    margin: -5px;
+   
+}
+.info header 
+{
+    background-color: #e5ddd5;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+/* Main Navigation */
+#main-nav ul
+{
+    
+    font-size: 1.5em;
+    border: 3px solid black;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    text-align: center;
+   
+    
+}
+#main-nav li
+{
+    list-style-type: none;
+    padding: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    
+}
+#main-nav a
+{
+    text-decoration: none;
+    color:black;
+}
+#main-nav a:hover
+{
+    border-bottom: 1px solid lightyellow;
+}
+
+/* Typography */
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Images */
-.pics
+.flex-container
 {
-    display:inline-block
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
 }
+
+.columns
+{
+    display:flex;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.col1of2
+{
+    flex:1
+    
+}
+
+/*Larger Resolutions (mobile devices)*/
+@media only screen and (max-width: 768px)
+{
+    body
+    {
+        background-color: lightblue;
+    }
+    #main-nav li
+    {
+    display:inline-block;
+    }
+    .columns
+    {
+        display:flex;
+    }
+    .col1of2
+    {
+        flex:1
+    }
+
+
+}
+
