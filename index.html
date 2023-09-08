@@ -4,27 +4,34 @@
 
 <head>
     <title>index.html</title>
-    <link rel="stylesheet" href="styles.css"> <!--Allows the css file to be activated-->
+    <link rel="stylesheet" href="main.css"> <!--Allows the css file to be activated-->
 </head>
 
 <body>
     <!--using id's to chnage them in CSS and know what they are-->
     <h1 id="title">Gavin Orme's 242 Assignment Homepage</h1>
-    <p id="p1">CSCE 242 Web Applications is a course that teaches students how to use github, html, and css. In this class we use git to commit changes to our github webpages.</p>
+    <!--<p id="p1">CSCE 242 Web Applications is a course that teaches students how to use github, html, and css. In this class we use git to commit changes to our github webpages.</p>-->
     <h2 id="sub">Assignments</h2>
     <div class="assignments">
-    <ol>
-        <li>
-            <a href="assignments/assignment1/index.html">Basic HTML</a>
-        </li>
-        
-        <li>
-            <a href="https://Gavinorme.github.io/assignments/assignment2">Basic CSS</a>
-        </li>
-        <li>
-            <a href="assignments/assignment3/index.html">Page Layout</a>
-        </li>
-    </ol>
+
+            <section id="assign1">
+                <p>Assignment 1 - <a href="assignments/assignment1/index.html"> Basic HTML</a></p>
+                <img src="images/assignment1.png" width="320" height="100" alt="HTML image">
+                <p>description of assignment</p>
+            </section>
+
+            <section id="assign2">
+            <p>Assignment 2 - <a href="https://Gavinorme.github.io/assignments/assignment2">Basic CSS</a></p>
+            <img src="images/assignment2.png" width="320" height="100" alt="CSS image">
+                <p>description of assignment</p>
+            </section>
+
+            <section id="assign3">
+            <p>Assignment 3 - <a href="assignments/assignment3/index.html">Page Layout</a></p>
+            <img src="images/assignment3.png" width="320" height="100" alt="Page Layout image">
+                <p>description of assignment</p>
+            </section>
+
     </div>
 </body>
 
