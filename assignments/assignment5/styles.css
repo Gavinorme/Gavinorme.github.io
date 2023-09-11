@@ -57,6 +57,7 @@ body
 .gate li
 {
     display: inline-block;
+    text-decoration: none;
 }
 #gateway
 {
@@ -94,11 +95,7 @@ horizontal-nav ul{
 }
 
 /* Main Content */
-.content
-{
-  
-    
-}
+
 #p1-1
 {
     margin-left: 100px;
@@ -112,7 +109,6 @@ horizontal-nav ul{
     font-size: larger;
     color: black;
     text-align: center;
-    
 }
 #p3-1
 {
@@ -165,6 +161,8 @@ horizontal-nav ul{
     border: 3px solid white;
     color: white;
     text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .link1 a:hover
 {
@@ -203,6 +201,8 @@ horizontal-nav ul{
     border: 3px solid black;
     color: white;
     text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .content5
@@ -242,22 +242,25 @@ horizontal-nav ul{
 {
     padding-left: 25px;
     font-size: 3em;
-    color: black;
+    color: white;
 }
 #p16
 {
     padding-left: 25px;
     font-size: larger;
-    color: black;
+    color: white;
 }
 .link7
 {
-    border: 3px solid white;
+    border: 2px solid white;
     background-color: black;
     text-decoration: none;
     padding-left: 25px;
     padding-right: 25px;
     margin-left: 25px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .content7
@@ -265,13 +268,13 @@ horizontal-nav ul{
     display: flex;
     background-color: white;
 }
-#p15
+#p17
 {
     padding-left: 25px;
     font-size: 3em;
     color: maroon;
 }
-#p16
+#p18
 {
     padding-left: 25px;
     font-size: larger;
@@ -283,7 +286,7 @@ horizontal-nav ul{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.link7
+.link8
 {
     border: 3px solid white;
     background-color: maroon;
@@ -291,28 +294,166 @@ horizontal-nav ul{
     padding-left: 25px;
     padding-right: 25px;
     margin-left: 25px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.content8
+{
+    display: flex;
+    background-color: darkcyan;
+}
+#p19
+{
+    padding-left: 25px;
+    font-size: 3em;
+    color: white;
+}
+#p20
+{
+    padding-left: 25px;
+    font-size: larger;
+    color: white;
+}
+.link9
+{
+    border: 3px solid white;
+    background-color: maroon;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 25px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.content9
+{
+    display: flex;
+    background-color: maroon;
+}
+#p21
+{
+    padding-left: 25px;
+    font-size: 3em;
+    color: white;
+}
+#p22
+{
+    padding-left: 25px;
+    font-size: larger;
+    color: white;
+}
+.link10
+{
+    border: 3px solid white;
+    background-color: black;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 25px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.content10
+{
+    display: flex;
+    background-color: white;
+}
+#p23
+{
+    padding-left: 25px;
+    font-size: 3em;
+    color: maroon;
+}
+#p24
+{
+    padding-left: 25px;
+    font-size: larger;
+    color: black;
+}
+#p25
+{
+    padding-left: 25px;
+    font-size: larger;
+    color: black;
+}
+#p26
+{
+    padding-left: 25px;
+    font-size: larger;
+    color: black;
+}
+#p27
+{
+    padding-left: 25px;
+    font-size: larger;
+    color: black;
+}
+.link11
+{
+    border: 3px solid white;
+    background-color: maroon;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 25px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 
 
+/* Footer */
+.col1of2
+{
+    display: flex;
+    background-color: maroon;
+    justify-content: space-between;
+}
+.flex-container
+{
+    color: white;
+
+}
+.col1of2 li a
+{
+    text-decoration: none;
+    color: white;
+    justify-content: space-around;
+}
+.col1of2, h1
+{
+    color: white;
+}
+
+
+.logo
+{
+    background-color: maroon;
+    display:inline;
+    justify-content: flex-start;
+    padding-right: 45%;
+}
+#logo-h3
+{
+
+}
+#logo-h1
+{
+
+}
 
 .header-logo-text
 {
     color: aliceblue;
     font-size: 1.0em;
 }
-
-
-#main-footer
-{
-    margin:auto;
-    width:100%;
-    background-color: firebrick;
-    padding-bottom:30px; 
-}
-
-
-
 
 #logo
 {
@@ -321,11 +462,7 @@ horizontal-nav ul{
     padding: 5px;
 }
 
-.image1-logo
-{
-    padding-bottom: 100px;
-    padding-left: 100px;
-}
+
 
 
 
