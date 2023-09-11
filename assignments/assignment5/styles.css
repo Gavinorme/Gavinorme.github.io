@@ -99,11 +99,13 @@ horizontal-nav ul
     padding: 46.5px;
     display: inline;
     justify-content: space-between;
+    color: white;
 }
 #list
 {
     background-color: red;
     margin-top: 50px;
+    color: white;
 }
 
 /* Main Content */
@@ -239,18 +241,22 @@ a.link2:hover
 .link3
 {
     text-decoration: none;
+    color: black;
 }
 .link4
 {
     text-decoration: none;
+    color: black;
 }
 .link5
 {
     text-decoration: none;
+    color: black;
 }
 .link6
 {
     text-decoration: none;
+    color: black;
 }
 
 .content6
