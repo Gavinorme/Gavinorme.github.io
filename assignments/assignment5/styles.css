@@ -8,7 +8,7 @@ body
     display: flex;
     justify-content: space-around;
     background-color: black;
-    padding-bottom:30px; 
+    padding-bottom:0px; 
     
 }
 .flex
@@ -16,13 +16,14 @@ body
     display: flex;
     justify-content: space-around;
     background-color: black;
-    padding-bottom:30px; 
+    padding-bottom:0px; 
+    padding-top: 0px;
 }
 
-#logo
+/*#logo
 {
     display: flex-start;
-}
+}*/
 /* Searchbar */
 .search
 {
@@ -51,7 +52,7 @@ body
     display: flex;
     justify-content: flex-end;
     background-color: black;
-    color: black;
+    color: white;
 
 }
 .gate li
@@ -67,31 +68,40 @@ body
     background-color: black;
     color: white;
 }
+#user-nav
+{
+    text-decoration: none;
+    color: white;
+}
 
 /* Horizontal main nav */
-horizontal-nav ul{
+horizontal-nav ul
+{
     padding-left: 0px;
 }
 
-.horizontal-nav li{
+.horizontal-nav li
+{
     list-style-type: none;
     margin: 0 5px;
 }
 
-.horizontal-nav a{
+.horizontal-nav a
+{
     text-decoration: none;
 }
 
 /* Main nav */
 #list li
 {
-    padding: 35px;
+    padding: 46.5px;
     display: inline;
     justify-content: space-between;
 }
 #list
 {
     background-color: red;
+    margin-top: 50px;
 }
 
 /* Main Content */
@@ -164,9 +174,10 @@ horizontal-nav ul{
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.link1 a:hover
+a.link1:hover 
 {
     background-color: white;
+    color:maroon
 }
 
 .content4
@@ -203,6 +214,11 @@ horizontal-nav ul{
     text-decoration: none;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+a.link2:hover 
+{
+    background-color: white;
+    color:maroon
 }
 
 .content5
@@ -262,6 +278,11 @@ horizontal-nav ul{
     padding-top: 15px;
     padding-bottom: 15px;
 }
+a.link7:hover 
+{
+    background-color: white;
+    color:maroon
+}
 
 .content7
 {
@@ -298,6 +319,11 @@ horizontal-nav ul{
     padding-top: 15px;
     padding-bottom: 15px;
 }
+a.link8:hover 
+{
+    background-color: white;
+    color:maroon
+}
 
 .content8
 {
@@ -328,6 +354,11 @@ horizontal-nav ul{
     padding-top: 15px;
     padding-bottom: 15px;
 }
+a.link9:hover 
+{
+    background-color: white;
+    color:maroon
+}
 
 .content9
 {
@@ -357,6 +388,11 @@ horizontal-nav ul{
     color: white;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+a.link10:hover 
+{
+    background-color: white;
+    color:maroon
 }
 
 .content10
@@ -406,7 +442,11 @@ horizontal-nav ul{
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
+a.link11:hover 
+{
+    background-color: white;
+    color:maroon
+}
 
 
 /* Footer */
@@ -436,13 +476,10 @@ horizontal-nav ul{
 .logo
 {
     background-color: maroon;
-    display:inline;
-    justify-content: flex-start;
-    padding-right: 45%;
 }
 #logo-h3
 {
-
+    
 }
 #logo-h1
 {
