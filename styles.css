@@ -34,13 +34,17 @@ body
     display: flex;
     justify-content: space-around;
     text-align: center;  
+    flex-wrap:wrap;
 }
-#assign1, #assign2, #assign3
+#assign1, #assign2, #assign3, #assign4, #assign5
 {
     margin: 25px 50px;
     border: 3px solid black;
     flex:1;
+    /* makes pictures into links */
+    /* max-width: 100%; */
 }
+
 
 /*gets rid of underline and changes color*/
 .assignments a /*classs instead of id for both the links*/
