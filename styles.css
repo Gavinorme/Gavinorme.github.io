@@ -32,7 +32,6 @@ body
 .assignments
 {
     display: flex;
-    justify-content: space-around;
     text-align: center;  
     flex-wrap:wrap;
 }
@@ -41,7 +40,6 @@ body
     margin: 25px 50px;
     border: 3px solid black;
     flex:1;
-    /* makes pictures into links */
     /* max-width: 100%; */
 }
 
