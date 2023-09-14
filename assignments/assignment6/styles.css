@@ -1,0 +1,79 @@
+/* Structure */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkseagreen;
+}
+
+.columns
+{
+    display: flex;
+    justify-content: space-around;
+}
+#hideandseek, #animate, #input
+{
+    margin: 25px 50px;
+    border: 3px solid black;
+    flex:1;
+}
+
+/* pad buttons */
+
+.list li
+{
+    text-align: left;
+    list-style-type: none;
+}
+
+
+/* Footer */
+#footer-title
+{
+    text-align: center;
+}
+
+
+
+/* Images */
+#head
+{
+    max-width: 35%;
+}
+#dance-image
+{
+    max-width: 50%;
+}
+#lion
+{
+    font-size: 3em;
+}
+
+
+/* Typeography */
+.header
+{
+    text-align: center;
+    background-color:darkkhaki;
+}
+.hide
+{
+    visibility: hidden;
+}
+.titles
+{
+    text-align: center;
+}
+#footer-title
+{
+    text-align: center;
+    background-color: cadetblue;
+}
+
+
+/* Smaller resolution */
+@media only screen and (max-width: 600px)
+{
+    .columns
+    {
+        display: inline;
+    }
+}
