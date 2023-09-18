@@ -26,19 +26,37 @@
             <section id="animate">
                 <h2 id="animate-title" class="titles">Animate</h2>
                 <button id="button-dance">Dance</button>
-                <p id="lion">&#129409</p>
+                <p id="lion">&#128378</p>
                 <!-- <img id="dance-image" src="images/dancing gif.gif" class="dance"> -->
             </section>
 
             <section id="input" class="titles">
                 <h2 id="input-title" class="titles">Input</h2>
-                <ul id="user-input" class="list">
-                    <li>Product Name: <input type="text"></li>
-                    <li>Comment: <input type="text"></li>
-                    <li>Rating: <input type="text"></li>
-                    <li>User Name: <input type="text"></li>
-                </ul>
-                <button id="button-dance">Add Comment</button>
+
+                <div class="messages">
+                <label for="txt-product-name">Product Name: </label>
+                <input type="text" id="txt-product-name"/>
+                <br />
+
+                <label for="txt-comment">Comment: </label>
+                <input type="text" id="txt-comment"/>
+                <br />
+
+                <label for="txt-rating">Rating: </label>
+                <input type="text" id="txt-rating"/>
+                <br />
+
+                <label for="txt-user-name">User Name: </label>
+                <input type="text" id="txt-user-name"/>
+                <br />
+
+                <h1 id="product-message"></h1>
+                <p id="rating"></p>
+                <p id="comment"></p>
+                <p id="user-message"></p>
+                </div>
+
+                <button id="button-input">Add Comment</button>
             </section>
 
         </div>

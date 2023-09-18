@@ -1,0 +1,40 @@
+/* Structure */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Animation */
+#square
+{
+    background-color: cornflowerblue;
+    width:100px;
+    height:100px;
+    text-align: center;
+    line-height: 100px;
+}
+.move-square
+{
+    position: relative;
+    animation-name: anim-square;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes anim-square {
+    0% {
+        background-color: red;
+        opacity: 1;
+        top:0px;
+    }
+    50% {
+        background-color: greenyellow;
+        opacity: 0;
+        top:100px;
+    }
+    100% {
+        background-color: aqua;
+        opacity: 1;
+        top:0px;
+    }
+
+}
