@@ -1,0 +1,77 @@
+/* Structure */
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.padded-area
+{
+    padding: 5px;
+    margin: auto;
+}
+
+
+/* Typeography */
+h1
+{
+    text-align: center;
+    background-color: lightblue;
+    padding-bottom: 10px;
+}
+.funds-raised
+{
+    display: none;
+}
+.age-comparison
+{
+   
+}
+
+/* Main-nav */
+
+#main-nav
+{
+    text-align: center;
+    background-color: darkgray;
+}
+.button-exercise
+{
+    text-align: center;
+    color: blueviolet;
+    text-decoration: none;
+    border: none;
+    background-color: darkgray;
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+.button-exercise a
+{
+    text-decoration: none;
+}
+.button-exercise:hover
+{
+    text-decoration: underline;
+    color:blueviolet;
+}
+
+/* Main-content */
+#main-content
+{
+    background-color: darkcyan;
+    width: 50%;
+    margin-top: 25px;
+}
+#col1of2
+{
+    
+}
+
+/* Form */
+label,
+input {
+    display: inline-block;
+}
+label {
+    width: 100px;
+    text-align: right;
+    padding: 5px;
+}

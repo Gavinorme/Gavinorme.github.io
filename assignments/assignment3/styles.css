@@ -172,6 +172,18 @@ body
     
 }
 
+#hamburger-div
+{
+    width: 35px;
+    height:5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.hide
+{
+    display: none;
+}
+
 /*Larger Resolutions (mobile devices)*/
 @media only screen and (max-width: 768px)
 {
@@ -190,5 +202,9 @@ body
     .col1of2
     {
         flex:1
+    }
+    #hamburger
+    {
+        display: none;
     }
 }

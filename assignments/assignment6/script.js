@@ -20,10 +20,10 @@ const addComment = () => {
     const userName = document.getElementById("txt-user-name").value;
     const userN = document.getElementById("user-message");
 
-    productP.innerHTML = (productName);
-    ratingR.innerHTML = ("Rating: "+ratingNum + "/5 stars ");
-    commentC.innerHTML = ("Description: "+comment+". ");
-    userN.innerHTML = ("By: " + userName);
+    productP.innerHTML += (productName);
+    ratingR.innerHTML += ("Rating: "+ratingNum + "/5 stars ");
+    commentC.innerHTML += ("Description: "+comment+". ");
+    userN.innerHTML += ("By: " + userName);
     
 }
 

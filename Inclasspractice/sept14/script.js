@@ -29,16 +29,37 @@
 
 //const myFunct = () => console.log("Funk");
 
-const moveSqaure = () => {
-    document.getElementById("square").classList.add("move-square");
-}
+// const moveSqaure = () => {
+//     document.getElementById("square").classList.add("move-square");
+// }
 
-const displayName = () => {
-    const firstName = document.getElementById("txt-first-name").value;
-    console.log("Hello "+firstName+"!");
+// const displayName = () => {
+//     const firstName = document.getElementById("txt-first-name").value;
+//     console.log("Hello "+firstName+"!");
+// }
+
+// window.onload = () => {
+//     document.getElementById("button-move").onclick = moveSqaure;
+//     document.getElementById("button-show-name").onclick = displayName;
+//     }
+
+
+const moveSqaure = () => {
+    // document.getElementById("square").classList.toggle("move-square");
+
+    const square = document.getElementById("square");
+
+    //is it currently animating
+    if(square.classList.contains("move-sqaure"))
+    {
+        square.classList.remove("remove-square");
+    }
+    else 
+    {
+        square.classList.add("move-square");
+    }
 }
 
 window.onload = () => {
     document.getElementById("button-move").onclick = moveSqaure;
-    document.getElementById("button-show-name").onclick = displayName;
     }
