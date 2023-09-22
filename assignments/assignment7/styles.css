@@ -2,6 +2,7 @@
 body
 {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgray;
 }
 .padded-area
 {
@@ -15,54 +16,72 @@ h1
 {
     text-align: center;
     background-color: lightblue;
-    padding-bottom: 10px;
+    padding: 10px;
 }
-.funds-raised
-{
-    display: none;
-}
-.age-comparison
-{
-   
-}
+
+
 
 /* Main-nav */
 
-#main-nav
+.main-nav
 {
-    text-align: center;
     background-color: darkgray;
+    justify-content: space-evenly;
+    display: inline;
 }
 .button-exercise
+{
+    display: none;   
+}
+#button-exercise1
 {
     text-align: center;
     color: blueviolet;
     text-decoration: none;
     border: none;
     background-color: darkgray;
-    /* display: flex;
-    justify-content: space-evenly; */
+}
+#button-exercise2
+{
+    text-align: center;
+    color: blueviolet;
+    text-decoration: none;
+    border: none;
+    background-color: darkgray;
 }
 .button-exercise a
 {
     text-decoration: none;
 }
-.button-exercise:hover
+.main-nav:hover
 {
-    text-decoration: underline;
     color:blueviolet;
+    border-bottom: 5px solid blueviolet;
 }
+
 
 /* Main-content */
 #main-content
 {
-    background-color: darkcyan;
     width: 50%;
     margin-top: 25px;
 }
 #col1of2
 {
-    
+    background-color: darkcyan;
+    padding: 5px;
+}
+#col2of2
+{
+    background-color: darkcyan;
+    padding: 5px;
+    text-align: left;
+}
+
+#exercise2-h2
+{
+    background-color: darkcyan;
+    text-align: left;
 }
 
 /* Form */
@@ -74,4 +93,77 @@ label {
     width: 100px;
     text-align: right;
     padding: 5px;
+}
+.label-input
+{
+    display: inline;
+    text-align: left;
+    width: 115px;
+    padding: 0px;
+}
+
+
+/* Exercises */
+.funds-raised
+{
+    display: none;
+}
+.age-comparison
+{
+    display: none;
+}
+
+/* Exercise 2 */
+#rectangle
+{
+    width: 50px;
+    height: 150px;
+    background: #fff;
+    margin-left: 115px;
+    margin-top: 5px;
+}
+#rectangle.fill 
+{
+    background: linear-gradient(180deg, #fff 75%, red 25%);
+}
+#rectangle.fill2 
+{
+    background: linear-gradient(180deg, #fff 50%, red 50%);
+}
+#rectangle.fill3 
+{
+    background: linear-gradient(180deg, #fff 25%, red 0%);
+}
+#rectangle.fill4 
+{
+    background: red;
+}
+
+
+#hamburger div 
+{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+@media only screen and (min-width: 600px) 
+{
+    .main-nav
+    {
+        display: flex;
+    }
+    #hamburger 
+    {
+        display: none;
+    }
+    .button-exercise
+    {
+        display: block;
+    }
+    .columns
+    {
+        display: flex;
+    }
 }
