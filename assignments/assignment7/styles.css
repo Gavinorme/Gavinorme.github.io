@@ -10,7 +10,6 @@ body
     margin: auto;
 }
 
-
 /* Typeography */
 h1
 {
@@ -19,10 +18,7 @@ h1
     padding: 10px;
 }
 
-
-
 /* Main-nav */
-
 .main-nav
 {
     background-color: darkgray;
@@ -58,7 +54,13 @@ h1
     color:blueviolet;
     border-bottom: 5px solid blueviolet;
 }
-
+#hamburger div 
+{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
 
 /* Main-content */
 #main-content
@@ -102,7 +104,6 @@ label {
     padding: 0px;
 }
 
-
 /* Exercises */
 .funds-raised
 {
@@ -137,15 +138,6 @@ label {
 #rectangle.fill4 
 {
     background: red;
-}
-
-
-#hamburger div 
-{
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
 }
 
 @media only screen and (min-width: 600px) 

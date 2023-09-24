@@ -26,8 +26,6 @@ const displayData = () =>
     const p = document.createElement("p");
     section.append(p);
 
-
-    //add equal toos and error messages
     //Exercise 1
     if(age2 > age1 && age2 > age3)
     {
