@@ -36,7 +36,7 @@ const displayData = () =>
             h3.textContent = `Names: ${name2} ${name1} ${name3}`;
             p.textContent = `Ages from oldest to youngest: ${age2} ${age1} ${age3}`;
         }
-        else if(age3 > age1)
+        else 
         {
             h3.textContent = `Names: ${name2} ${name3} ${name1}`;
             p.textContent = `Age from oldest to youngest: ${age2} ${age3} ${age1}`;
@@ -49,7 +49,7 @@ const displayData = () =>
             h3.textContent = `Names: ${name1} ${name2} ${name3}`;
             p.textContent = `Age from oldest to youngest: ${age1} ${age2} ${age3}`;
         }
-        else if(age3 > age2)
+        else 
         {
             h3.textContent = `Names: ${name1} ${name3} ${name2}`;
             p.textContent = `Age from oldest to youngest: ${age1} ${age3} ${age2}`;
@@ -62,11 +62,15 @@ const displayData = () =>
             h3.textContent = `Names: ${name3} ${name1} ${name2}`;
             p.textContent = `Age from oldest to youngest: ${age3} ${age1} ${age2}`;
         }
-        else if(age2 > age1)
+        else
         {
             h3.textContent = `Names: ${name3} ${name2} ${name1}`;
             p.textContent = `Age from oldest to youngest: ${age3} ${age2} ${age1}`;
         }
+    }
+    else 
+    {
+        h3.textContent = `Invalid Input`;
     }
 };
 
