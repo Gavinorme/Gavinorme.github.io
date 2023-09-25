@@ -40,7 +40,7 @@ const displayData = () =>
             p.textContent = `Age from oldest to youngest: ${age2} ${age3} ${age1}`;
         }
     }
-    if(age1 > age2 && age1 > age3)
+    else if(age1 > age2 && age1 > age3)
     {
         if(age2 > age3)
         {
@@ -53,7 +53,7 @@ const displayData = () =>
             p.textContent = `Age from oldest to youngest: ${age1} ${age3} ${age2}`;
         }
     }
-    if(age3 > age1 && age3 > age2)
+    else if(age3 > age1 && age3 > age2)
     {
         if(age1 > age2)
         {
