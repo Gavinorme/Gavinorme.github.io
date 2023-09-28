@@ -1,0 +1,79 @@
+/* Structure */
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Typeography */
+#running-man-h1
+{
+    text-align: center;
+}
+
+/* Exercise 1 */
+#col1of2
+{
+    background-color: lightblue;
+    padding: 5px;
+    width: 50%;
+}
+.man
+{
+    background-color: blue;
+    border: 5px solid blue;
+    width: 75%;
+    height: 25%;
+}
+#walking-man
+{
+    width: 10%;
+    height: 75%;
+}
+#running-man
+{
+    width: 10%;
+    height: 75%;
+}
+#run
+{
+    visibility: hidden;
+}
+
+/* Exercise 2 */
+#rectangle
+{
+    width: 50px;
+    height: 150px;
+    background: #fff;
+    margin-left: 115px;
+    margin-top: 5px;
+}
+#col2of2
+{
+    background-color: darkcyan;
+    padding: 5px;
+    text-align: left;
+    width: 50%;
+}
+#rectangle.fill 
+{
+    background: linear-gradient(180deg, #fff 75%, red 25%);
+}
+#rectangle.fill2 
+{
+    background: linear-gradient(180deg, #fff 50%, red 50%);
+}
+#rectangle.fill3 
+{
+    background: linear-gradient(180deg, #fff 25%, red 0%);
+}
+#rectangle.fill4 
+{
+    background: red;
+}
