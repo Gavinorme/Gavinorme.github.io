@@ -34,6 +34,7 @@ body
     display: flex;
     text-align: center;  
     flex-wrap:wrap;
+    justify-content: center;
 }
 #assign1, #assign2, #assign3, #assign4, #assign5, #assign6, #assign7, #assign8
 {
