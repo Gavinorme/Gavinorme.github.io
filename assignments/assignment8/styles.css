@@ -21,28 +21,49 @@ body
 {
     background-color: lightblue;
     padding: 5px;
+    margin: 25px;
     width: 50%;
 }
 .man
 {
-    background-color: blue;
-    border: 5px solid blue;
+    /* background-color: blue;
+    border: 5px solid blue; */
     width: 75%;
     height: 25%;
 }
 #walking-man
 {
-    width: 10%;
-    height: 75%;
+    --x: 0px;
+    width: 50px;
+    height: 75px;
+    background: #fff;
+    margin-left: var(--x);
+    margin-top: 5px;
 }
+
 #running-man
 {
-    width: 10%;
-    height: 75%;
+    --x: 125px;
+    width: 50px;
+    height: 75px;
+    background: #fff;
+    margin-left: var(--x);
+    margin-bottom: 75px;
+    margin-top: -14.5px;
 }
-#run
+.hidden
 {
-    visibility: hidden;
+    display: none;
+}
+#button-walk
+{
+    background: none;
+    border: none;
+}
+#button-run
+{
+    background: none;
+    border: none;
 }
 
 /* Exercise 2 */
@@ -63,9 +84,10 @@ body
 }
 #rectangle.fill 
 {
-    background: linear-gradient(180deg, #fff 75%, red 25%);
+    --x: 0%;
+    background: linear-gradient(180deg, #fff --x, red --x);
 }
-#rectangle.fill2 
+/* #rectangle.fill2 
 {
     background: linear-gradient(180deg, #fff 50%, red 50%);
 }
@@ -76,4 +98,9 @@ body
 #rectangle.fill4 
 {
     background: red;
+} */
+
+@media (min-width: 900px)
+{
+
 }
