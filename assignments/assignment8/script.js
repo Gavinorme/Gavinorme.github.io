@@ -2,10 +2,8 @@
 var margin = 0;
 const move = () =>
     {
-        //let walk = 0;
         const updateWalk = setInterval(() => 
         {
-        //walk++;
         for(i=0;i<10;i++)
         {
             moveRight(margin += 1);
@@ -32,42 +30,32 @@ const moveRight = (size) =>
     
 
 //Exercise 2
-//var background = none;
+var background = 0;
 const colorRectangle = () => 
 {
     const funds = parseInt(document.getElementById("txt-funds").value);
-    //const startNumber = parseInt(document.getElementById("txt-funds").value);
+    const updateRec = setInterval(() =>
+    {
+        for(let i=0;i<=10;i++)
+        {
+            const fill = document.getElementById("rectangle").classList.add("red");
+            colorFillx(background = funds/100);
+            colorFilly(background = 100-(funds/100));
+        }
+    }, 1000);
+}    
 
-
-    //loop to make every number of funds show on the thermometer
-    for(let i=funds;i<=10000;i++)
-    {
-        const fill = document.getElementById("rectangle").root.style.setProperty("--x", background + "px");
-        fill.background = i;
-        fill.append(i);
-    }
-
-    if(funds >= 2500)
-    {
-        document.getElementById("rectangle").classList.add("fill");
-    }
-    if(funds >= 5000)
-    {
-        document.getElementById("rectangle").classList.add("fill2");
-    }
-    if(funds >= 7500)
-    {
-        document.getElementById("rectangle").classList.add("fill3");
-    }
-    if(funds >= 10000)
-    {
-        document.getElementById("rectangle").classList.add("fill4");
-    }
+const colorFillx = (fill) =>
+{
+    document.documentElement.style.setProperty("--a", fill + "%");
+}
+const colorFilly = (fill) =>
+{
+    document.documentElement.style.setProperty("--b", fill + "%");
 }
 
 window.onload = () => 
 {
     document.getElementById("button-display").onclick = colorRectangle;
     document.getElementById("button-walk").onclick = move;
-    //document.getElementById("button-run").onclick = move;
 }

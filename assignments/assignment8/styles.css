@@ -75,6 +75,7 @@ body
     margin-left: 115px;
     margin-top: 5px;
 }
+
 #col2of2
 {
     background-color: darkcyan;
@@ -82,25 +83,30 @@ body
     text-align: left;
     width: 50%;
 }
-#rectangle.fill 
-{
-    --x: 0%;
-    background: linear-gradient(180deg, #fff --x, red --x);
-}
-/* #rectangle.fill2 
-{
-    background: linear-gradient(180deg, #fff 50%, red 50%);
-}
-#rectangle.fill3 
-{
-    background: linear-gradient(180deg, #fff 25%, red 0%);
-}
-#rectangle.fill4 
-{
-    background: red;
-} */
 
-@media (min-width: 900px)
+#rectangle.red
 {
+    animation-name: rectangle;
+    animation-duration: 4s;
+    animation-iteration-count: 1s;
+} 
 
+:root
+{
+    --a: 0%;
+    --b: 0%;
+}
+
+@keyframes rectangle {
+    0% {
+        background: linear-gradient(180deg, #fff var(--a), red var(--b));
+    }
+
+    50% {
+        background: linear-gradient(180deg, #fff var(--a), red var(--b));
+    }
+
+    100% {
+        background: linear-gradient(180deg, #fff var(--a), red var(--b));
+    }
 }
