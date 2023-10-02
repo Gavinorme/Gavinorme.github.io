@@ -47,11 +47,11 @@ const colorRectangle = () =>
 
 const colorFillx = (fill) =>
 {
-    document.documentElement.style.setProperty("--a", fill + "%");
+    document.documentElement.style.setProperty("--b", fill + "%");
 }
 const colorFilly = (fill) =>
 {
-    document.documentElement.style.setProperty("--b", fill + "%");
+    document.documentElement.style.setProperty("--a", fill + "%");
 }
 
 window.onload = () => 
