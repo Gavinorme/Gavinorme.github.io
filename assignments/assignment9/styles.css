@@ -1,0 +1,19 @@
+/* Structure */
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgray;
+}
+
+.flex-container
+{
+    display: flex;
+    
+}
+
+#quotes, #rainbow
+{
+    background-color: lightblue;
+    width: 50%;
+    margin: 25px;
+}
