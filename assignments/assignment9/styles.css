@@ -16,4 +16,57 @@ body
     background-color: lightblue;
     width: 50%;
     margin: 25px;
+    flex: 1;
+}
+
+/* Quotes */
+
+
+/* Rainbow */
+#rainbowDraw
+{
+    background-color: red; 
+    /* width: var(--x); */
+    width: 80%;
+    height: 15%;
+    position: relative;
+    /* --x: 0%; */
+}
+.hidden
+{
+    display: none;
+}
+
+#rainbow.red
+{
+    animation-name: rainbow;
+    animation-duration: 1s;
+    animation-iteration-count: 1s;
+}
+
+:root
+{
+    --a: red;
+    --b: orange;
+    --c: yellow;
+    --d: green;
+    --e: blue;
+    --f: purple;
+}
+
+@keyframes rainbow {
+    0% {
+        background: linear-gradient(180deg, red var(--a), orange var(--b), yellow var(--c), green var(--d) blue var(--e), indigo var(--f));
+        opacity: 0%;
+    }
+
+    50% {
+        background: linear-gradient(180deg, red var(--a), orange var(--b), yellow var(--c), green var(--d) blue var(--e), indigo var(--f));
+        opacity: 50%;
+    }
+   
+    100% {
+        background: linear-gradient(180deg, red var(--a), orange var(--b), yellow var(--c), green var(--d) blue var(--e), indigo var(--f));
+        opacity: 100%;
+    }
 }
