@@ -70,21 +70,6 @@ const drawRainbow = () =>
         const rainbowWidth = (width) => {
             document.documentElement.style.setProperty("--x", width + "%");
         }
-
-
-
-    //     const updateRainbow = setInterval(() =>
-    //     {
-    //         for(let i=0;i<=10;i++)
-    //         {
-    //             const fill = document.getElementById("rainbowDraw").classList.add("red");
-    //             console.log("test");
-    //             colorRed(background = 100);
-    //             // colorFilly(background = 100-(funds/100));
-    //         }
-    //     }, 1000);
-   
-    
 }
     // const colorFilly = (fill) =>
     // {
@@ -122,4 +107,9 @@ window.onload = () =>
 //add a table for the quotes and use display hidden maybe
 //loop through an array of colors and then add a paragraph
 //z index? overlapping
+//
+//opacity: 0; in .hidden
+//use count and nextElementSibling for quotes
+//animation-fill-mode: fowards  to get it to stay what it is at the end
+//addEventListener ("animationend")
 //
