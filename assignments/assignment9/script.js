@@ -32,18 +32,40 @@ const updateQuote = setInterval(() =>
 //Rainbow
 var background = 0;
 var width = 0;
-var root = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo"];
+var count = 0;
+// const resultDiv = document.getElementById("result");
+// const section = document.getElementById("selection");
+// resultDiv.append(section);
+// const h3 = document.getElementById("h3");
+// section.append(h3);
+// const p = document.getElementById("p");
+// section.append(p);
+
+var rainbow = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo"];
 const drawRainbow = () =>
 {
-    //console.log("test2");
 
         const myTimeout = setTimeout(myRainbow, 1000);
 
-        function myRainbow() {
-            document.getElementById("rainbowDraw").classList.remove("hidden");
+        function myRainbow() {    //get it to do one color at a time with count
+            for(let i in rainbow)
+            {
+            document.getElementById("red").classList.remove("hidden");
             colorRed(background = 80);
+            document.getElementById("orange").classList.remove("hidden");
+            colorRed(background = 80);
+            document.getElementById("yellow").classList.remove("hidden");
+            colorRed(background = 80);
+            document.getElementById("green").classList.remove("hidden");
+            colorRed(background = 80);
+            document.getElementById("blue").classList.remove("hidden");
+            colorRed(background = 80);
+            document.getElementById("indigo").classList.remove("hidden");
+            colorRed(background = 80);
+            }
+
             move();
-            rainbowWidth(width = 10);
+            //rainbowWidth(width = 10);
         }
 
         const colorRed = (fill) => {
@@ -64,12 +86,8 @@ const drawRainbow = () =>
                   pos++;  
                   moveRight.style.left = pos + "px"; 
                 }
-              } //change up later
-        }
-
-        const rainbowWidth = (width) => {
-            document.documentElement.style.setProperty("--x", width + "%");
-        }
+              } 
+            }//change up later
 }
     // const colorFilly = (fill) =>
     // {

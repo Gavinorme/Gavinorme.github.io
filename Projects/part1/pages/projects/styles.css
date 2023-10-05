@@ -49,7 +49,8 @@ body
 }
 
 /* main-nav */
-#hamburger div {
+#hamburger div 
+{
     width: 35px;
     height: 5px;
     background-color: black;

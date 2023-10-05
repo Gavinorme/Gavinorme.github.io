@@ -23,14 +23,51 @@ body
 
 
 /* Rainbow */
-#rainbowDraw
+#rainbow
+{
+    
+}
+#red
 {
     background-color: red; 
-    /* width: var(--x); */
     width: 80%;
     height: 15%;
     position: relative;
-    /* --x: 0%; */
+}
+#orange
+{
+    background-color: orange; 
+    width: 80%;
+    height: 15%;
+    position: relative;
+}
+#yellow
+{
+    background-color: yellow; 
+    width: 80%;
+    height: 15%;
+    position: relative;
+}
+#green
+{
+    background-color: green; 
+    width: 80%;
+    height: 15%;
+    position: relative;
+}
+#blue
+{
+    background-color: blue; 
+    width: 80%;
+    height: 15%;
+    position: relative;
+}
+#indigo
+{
+    background-color: indigo; 
+    width: 80%;
+    height: 15%;
+    position: relative;
 }
 .hidden
 {
