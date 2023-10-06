@@ -59,7 +59,7 @@ const drawRainbow = () =>
 
         
 
-        function myRainbow() {    //get it to do one color at a time with count
+        function myRainbow() { 
             document.getElementById("red").classList.remove("hidden");
             colorRed(background = 80);
         }
@@ -99,17 +99,3 @@ window.onload = () =>
     setInterval(quote, 1000);
     quote();
 }
-
-//Notes for wireframe and arrays
-//wireframe
-//make multiple html pages
-//arrays
-//add a table for the quotes and use display hidden maybe
-//loop through an array of colors and then add a paragraph
-//z index? overlapping
-//
-//opacity: 0; in .hidden
-//use count and nextElementSibling for quotes
-//animation-fill-mode: fowards  to get it to stay what it is at the end
-//addEventListener ("animationend")
-//

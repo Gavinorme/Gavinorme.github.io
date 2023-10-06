@@ -10,7 +10,14 @@ body
     display: flex;
 }
 
-#quotes, #rainbow
+#quotes
+{
+    width: 50%;
+    margin: 25px;
+    flex: 1;
+    background-color: lightblue;
+}
+#rainbow
 {
     width: 50%;
     margin: 25px;
@@ -19,6 +26,7 @@ body
 }
 
 /* Rainbow */
+
 #gold
 {
     position: absolute;
