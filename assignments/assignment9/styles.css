@@ -8,24 +8,25 @@ body
 .flex-container
 {
     display: flex;
-    
 }
 
 #quotes, #rainbow
 {
-    background-color: lightblue;
     width: 50%;
     margin: 25px;
     flex: 1;
+    background-color: lightblue;
 }
 
 /* Quotes */
 
 
 /* Rainbow */
-#rainbow
+#gold
 {
-    
+    position: absolute;
+    right: 115px;
+    z-index: 1;
 }
 #red
 {
@@ -33,6 +34,9 @@ body
     width: 80%;
     height: 15%;
     position: relative;
+    margin:0px;
+    margin-bottom: 0px;
+    padding:0px;
 }
 #orange
 {
@@ -40,6 +44,9 @@ body
     width: 80%;
     height: 15%;
     position: relative;
+    margin:0px;
+    margin-bottom: 0px;
+    padding:0px;
 }
 #yellow
 {
@@ -47,6 +54,9 @@ body
     width: 80%;
     height: 15%;
     position: relative;
+    margin:0px;
+    margin-bottom: 0px;
+    padding:0px;
 }
 #green
 {
@@ -54,6 +64,9 @@ body
     width: 80%;
     height: 15%;
     position: relative;
+    margin:0px;
+    margin-bottom: 0px;
+    padding:0px;
 }
 #blue
 {
@@ -61,6 +74,9 @@ body
     width: 80%;
     height: 15%;
     position: relative;
+    margin:0px;
+    margin-bottom: 0px;
+    padding:0px;
 }
 #indigo
 {
@@ -68,13 +84,47 @@ body
     width: 80%;
     height: 15%;
     position: relative;
+    margin:0px;
+    margin-bottom: 0px;
+    padding:0px;
 }
 .hidden
 {
     display: none;
 }
 
-#rainbow.red
+
+.rainbow-red
+{
+    animation-name: rainbow;
+    animation-duration: 1s;
+    animation-iteration-count: 1s;
+}
+.rainbow-orange
+{
+    animation-name: rainbow;
+    animation-duration: 1s;
+    animation-iteration-count: 1s;
+}
+.rainbow-yellow
+{
+    animation-name: rainbow;
+    animation-duration: 1s;
+    animation-iteration-count: 1s;
+}
+.rainbow-green
+{
+    animation-name: rainbow;
+    animation-duration: 1s;
+    animation-iteration-count: 1s;
+}
+.rainbow-blue
+{
+    animation-name: rainbow;
+    animation-duration: 1s;
+    animation-iteration-count: 1s;
+}
+.rainbow-indigo
 {
     animation-name: rainbow;
     animation-duration: 1s;
@@ -89,21 +139,4 @@ body
     --d: green;
     --e: blue;
     --f: indigo;
-}
-
-@keyframes rainbow {
-    0% {
-        background: linear-gradient(180deg, red var(--a), orange var(--b), yellow var(--c), green var(--d) blue var(--e), indigo var(--f));
-        opacity: 0%;
-    }
-
-    50% {
-        background: linear-gradient(180deg, red var(--a), orange var(--b), yellow var(--c), green var(--d) blue var(--e), indigo var(--f));
-        opacity: 50%;
-    }
-   
-    100% {
-        background: linear-gradient(180deg, red var(--a), orange var(--b), yellow var(--c), green var(--d) blue var(--e), indigo var(--f));
-        opacity: 100%;
-    }
 }

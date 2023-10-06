@@ -1,24 +1,30 @@
 //Quotes
+let count = 0;
 const quote = () =>
 {
-    let quotes = ["I have no enemies", "dang it", "desmond"];
-    const myArray = quotes.push("");
-    document.getElementById("quotes").innerHTML = myArray[1]
+    const resultDiv = document.getElementById("result");
+    const section = document.createElement("section");
+    resultDiv.append(section);
+    const h3 = document.createElement("h3");
+    section.append(h3);
+    const p = document.createElement("p");
+    section.append(p);
+    const p2 = document.createElement("p");
+    section.append(p2);
+    var result = document.getElementById("result");
 
-// const resultDiv = document.getElementById("result");
-// const section = document.getElementById("selection");
-// resultDiv.append(section);
-// const h3 = document.getElementById("h3");
-// section.append(h3);
-// const p = document.getElementById("p");
-// section.append(p);
+    var str = ["I have no enemies", "dang it", "desmond", "test4", "test5"];
+    var currentResult = str[count];
+    result.innerHTML = currentResult;
+    count++; //change up later
 
+    let nextResult = currentResult+1;
 
-    for(let i in quotes)
+    if(!nextResult)
     {
-        console.log(quotes);
+        count = 0;
     }
-}
+};
 
 const updateQuote = setInterval(() =>
     {
@@ -30,91 +36,68 @@ const updateQuote = setInterval(() =>
 
 
 //Rainbow
-var background = 0;
-var width = 0;
-var count = 0;
-// const resultDiv = document.getElementById("result");
-// const section = document.getElementById("selection");
-// resultDiv.append(section);
-// const h3 = document.getElementById("h3");
-// section.append(h3);
-// const p = document.getElementById("p");
-// section.append(p);
-
-var rainbow = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo"];
 const drawRainbow = () =>
 {
+        let count = 0;
+        document.getElementById("gold").classList.add("hidden");
+        setInterval(myRainbow, 0);
+        document.getElementById("red").classList.add("rainbow-red");
+        setInterval(myOrange, 1000);
+        document.getElementById("orange").classList.add("rainbow-orange");
+        setInterval(myYellow, 2000);
+        document.getElementById("yellow").classList.add("rainbow-yellow");
+        setInterval(myGreen, 3000);
+        document.getElementById("green").classList.add("rainbow-green");
+        setInterval(myBlue, 4000);
+        document.getElementById("blue").classList.add("rainbow-blue");
+        setInterval(myIndigo, 5000);
+        document.getElementById("indigo").classList.add("rainbow-indigo");
+        setInterval(myGold,6001);
 
-        const myTimeout = setTimeout(myRainbow, 1000);
+        clearInterval();
+        
+        
+
+        
 
         function myRainbow() {    //get it to do one color at a time with count
-            for(let i in rainbow)
-            {
             document.getElementById("red").classList.remove("hidden");
             colorRed(background = 80);
+        }
+
+        function myOrange() {
             document.getElementById("orange").classList.remove("hidden");
             colorRed(background = 80);
+        }
+        function myYellow() {
             document.getElementById("yellow").classList.remove("hidden");
             colorRed(background = 80);
+        }
+        function myGreen() {
             document.getElementById("green").classList.remove("hidden");
             colorRed(background = 80);
+        }
+        function myBlue() {
             document.getElementById("blue").classList.remove("hidden");
             colorRed(background = 80);
+        }
+        function myIndigo() {
             document.getElementById("indigo").classList.remove("hidden");
             colorRed(background = 80);
-            }
-
-            move();
-            //rainbowWidth(width = 10);
         }
+        function myGold() {
+            document.getElementById("gold").classList.remove("hidden");
+        }
+}
 
         const colorRed = (fill) => {
             document.documentElement.style.setProperty("--a", fill + "%");
         }
 
-        const move = () => {
-            let id = null;
-            const moveRight = document.getElementById("rainbowDraw"); 
-            let pos = 0;
-            clearInterval(id);
-            id = setInterval(frame, 5);
-
-            function frame() {
-                if (pos == 50) {
-                  clearInterval(id);
-                } else {
-                  pos++;  
-                  moveRight.style.left = pos + "px"; 
-                }
-              } 
-            }//change up later
-}
-    // const colorFilly = (fill) =>
-    // {
-    //     document.documentElement.style.setProperty("--a", fill + "%");
-    // }
-
-
-    //const currentRow = document.querySelector("#rows not(.hidden)");
-    //make a table of rows and add the class hidden to all
-    //currentRow.classList.add("hidden");
-    //let nextRow = currentRow.nextElementSibling;
-
-    //if (nextRow == row);
-    // {
-    //     nextRow = document.querySelector(`#rainbow : first-child`);
-    // }
-
-    //nextRow.classList.remove("hidden")
-
-    //}
-
-
-
 window.onload = () => 
 {
     document.getElementById("button-draw").onclick = drawRainbow;
-    //setInterval(drawRainbow, 1000);
+    setInterval(quote, 1000);
     quote();
 }
 
