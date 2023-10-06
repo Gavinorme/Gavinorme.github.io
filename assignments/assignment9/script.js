@@ -13,12 +13,11 @@ const quote = () =>
     section.append(p2);
     var result = document.getElementById("result");
 
-    var str = ["I have no enemies", "dang it", "desmond", "test4", "test5"];
-    var currentResult = str[count];
-    result.innerHTML = currentResult;
+    var str = ["Victory, however long and hard the road may be, for without victory there is no survival. - Winston Churchill", "In three words I can sum up everything I've learned about life: it goes on. -Robert Frost", "I find that the harder I work, the more luck I seem to have. -Thomas Jefferson", "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe. - Albert Einstein", "To live is the rarest thing in the world. Most people exist, that is all. - Oscar Wilde"];
+    result.innerHTML = str[count];
     count++; //change up later
 
-    let nextResult = currentResult+1;
+    let nextResult = str[count];
 
     if(!nextResult)
     {

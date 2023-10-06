@@ -21,6 +21,10 @@ body
 {
     margin-left: 35%;
 }
+.img
+{
+    padding: 10px;
+}
 
 
 /* Typeography */
@@ -62,6 +66,32 @@ body
     text-decoration: none;
     color: black;
 }
+
+/* Main content */
+.education 
+{
+    display: flex;
+    background-color: white;
+}
+#p15, #p16
+{
+    padding: 10px;
+}
+#p15
+{
+    font-size: x-large;
+}
+.family
+{
+    display: flex;
+    background-color: white;
+}
+.hobbies
+{
+    display: flex;
+    background-color: white;
+}
+
 
 
 
