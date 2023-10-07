@@ -4,14 +4,6 @@ body
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Images */
-.images
-{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 
 .hidden
 {
@@ -19,20 +11,19 @@ body
 }
 
 /* Projects */
-.projects
+.about
 {
     display: inline;
-}
-#project-link 
-{
-    text-decoration: none;
-    color: black;
 }
  
 /* Images */
 #img1
 {
     margin-left: 35%;
+}
+.img
+{
+    padding: 10px;
 }
 
 
@@ -43,12 +34,12 @@ body
 }
 #project-h2
 {
-    margin-left: 50%;
+    margin-left: 35%;
     margin-top: 6%;
 }
 #p1
 {
-    width: 60%;
+    width: 50%;
     margin-left: 35%;
     margin-right: auto;
 }
@@ -68,12 +59,39 @@ body
 #nav-items li 
 {
     list-style-type: none;
+
 }
 #nav-items a 
 {
     text-decoration: none;
     color: black;
 }
+
+/* Main content */
+.education 
+{
+    display: flex;
+    background-color: white;
+}
+#p15, #p16
+{
+    padding: 10px;
+}
+#p15
+{
+    font-size: x-large;
+}
+.family
+{
+    display: flex;
+    background-color: white;
+}
+.hobbies
+{
+    display: flex;
+    background-color: white;
+}
+
 
 
 
@@ -93,16 +111,13 @@ body
         display: inline-block;
         justify-content: space-between;
         margin-left: 10.5%;  
-        margin-top: 2%;
+        margin-bottom: 2%;
         font-size: 1.5em;
-        text-align: center;
     }
-    .projects
+    .experience
     {
         display: flex;
         justify-content: space-evenly;
-        margin-right: 7%;
-        margin-top: 4%;
     }
 
 }

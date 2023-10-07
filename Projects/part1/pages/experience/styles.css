@@ -15,6 +15,11 @@ body
 {
     display: inline;
 }
+#experience-link 
+{
+    text-decoration: none;
+    color: black;
+}
  
 /* Images */
 #img1
@@ -26,7 +31,7 @@ body
 /* Typeography */
 #experience-h1
 {
-    margin-left: 9%;
+    text-align: center;
 }
 #project-h2
 {
@@ -80,13 +85,15 @@ body
     {
         display: inline-block;
         justify-content: space-between;
-        margin-left: 9%;  /*fix alignment*/
+        margin-left: 10.5%;  /*fix alignment*/
         font-size: 1.5em;
     }
     .experience
     {
         display: flex;
         justify-content: space-evenly;
+        margin-right: 7%;
+        margin-top: 4%;
     }
 
 }

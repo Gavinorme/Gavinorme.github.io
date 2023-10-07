@@ -30,9 +30,9 @@ body
 /* Buttons */
 #button-left, #button-right
 {
+    justify-content: center;
     margin-left: 34%;
-    margin-right: auto; /* fix */
-    /* display: inline-block; */
+    margin-right: 3%;
 }
  
 
@@ -40,6 +40,16 @@ body
 
 /* Typeography */
 #header-h1
+{
+    text-align: center;
+}
+#p1
+{
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+}
+#portfolio
 {
     text-align: center;
 }
@@ -77,11 +87,14 @@ body
     {
         display: block;
     }
-    #nav-items li /* fix alignment */
+    #nav-items li 
     {
         display: inline-block;
-        justify-content: space-evenly;
-        margin-left: 12%; 
+        justify-content: space-between;
+        margin-left: 10.5%;  
+        margin-top: 2%;
+        font-size: 1.5em;
+        text-align: center;
     }
 
 }

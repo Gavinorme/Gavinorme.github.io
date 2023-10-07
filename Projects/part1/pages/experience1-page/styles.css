@@ -4,14 +4,6 @@ body
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Images */
-.images
-{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 
 .hidden
 {
@@ -19,14 +11,10 @@ body
 }
 
 /* Projects */
-.projects
+.experience
 {
     display: inline;
-}
-#project-link 
-{
-    text-decoration: none;
-    color: black;
+
 }
  
 /* Images */
@@ -37,18 +25,18 @@ body
 
 
 /* Typeography */
-#project-h1
+#experience-h1
 {
     text-align: center;
 }
 #project-h2
 {
-    margin-left: 50%;
+    margin-left: 35%;
     margin-top: 6%;
 }
 #p1
 {
-    width: 60%;
+    width: 50%;
     margin-left: 35%;
     margin-right: auto;
 }
@@ -68,6 +56,7 @@ body
 #nav-items li 
 {
     list-style-type: none;
+
 }
 #nav-items a 
 {
@@ -92,12 +81,10 @@ body
     {
         display: inline-block;
         justify-content: space-between;
-        margin-left: 10.5%;  
-        margin-top: 2%;
+        margin-left: 10.5%;  /*fix alignment*/
         font-size: 1.5em;
-        text-align: center;
     }
-    .projects
+    .experience
     {
         display: flex;
         justify-content: space-evenly;
