@@ -13,26 +13,17 @@ const quote = () =>
     section.append(p2);
     var result = document.getElementById("result");
 
-    var str = ["Victory, however long and hard the road may be, for without victory there is no survival. - Winston Churchill", "In three words I can sum up everything I've learned about life: it goes on. -Robert Frost", "I find that the harder I work, the more luck I seem to have. -Thomas Jefferson", "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe. - Albert Einstein", "To live is the rarest thing in the world. Most people exist, that is all. - Oscar Wilde"];
-    result.innerHTML = str[count];
-    count++; //change up later
+    var list = ["Victory, however long and hard the road may be, for without victory there is no survival. - Winston Churchill", "In three words I can sum up everything I've learned about life: it goes on. -Robert Frost", "I find that the harder I work, the more luck I seem to have. -Thomas Jefferson", "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe. - Albert Einstein", "To live is the rarest thing in the world. Most people exist, that is all. - Oscar Wilde"];
+    result.innerHTML = list[count];
+    count++; 
 
-    let nextResult = str[count];
+    let nextResult = list[count];
 
     if(!nextResult)
     {
         count = 0;
     }
 };
-
-const updateQuote = setInterval(() =>
-    {
-        for(let i=0;i<=10;i++)
-        {
-            
-        }
-    }, 1000);
-
 
 //Rainbow
 const drawRainbow = () =>
@@ -52,13 +43,8 @@ const drawRainbow = () =>
         setInterval(myIndigo, 5000);
         document.getElementById("indigo").classList.add("rainbow-indigo");
         setInterval(myGold,6001);
-
         clearInterval();
         
-        
-
-        
-
         function myRainbow() { 
             document.getElementById("red").classList.remove("hidden");
             colorRed(background = 80);

@@ -5,21 +5,13 @@ body
 }
 
 /* Images */
-.images
-{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
 #img2
 {
-    margin-left: 34%;
-    margin-right: auto;
+    margin-left: 36%;
 }
 #img3
 {
-    margin-left: 34%;
-    margin-right: auto;
+    margin-left: 36%;
 }
 
 .hidden
@@ -28,11 +20,10 @@ body
 }
 
 /* Buttons */
-#button-left, #button-right
+#buttons
 {
+    display: flex;
     justify-content: center;
-    margin-left: 34%;
-    margin-right: 3%;
 }
  
 

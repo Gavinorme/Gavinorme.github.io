@@ -21,7 +21,7 @@ body
 /* Projects */
 .projects
 {
-    display: inline;
+    /* display: inline; */
 }
  
 /* Images */
@@ -39,13 +39,12 @@ body
 #project-h2
 {
     margin-left: 50%;
-    margin-top: 6%;
+    margin-top: 2%;
 }
 #p1
 {
-    width: 60%;
-    margin-left: 35%;
-    margin-right: auto;
+    margin-left: 10%;
+    text-align: center;
 }
 
 /* main-nav */

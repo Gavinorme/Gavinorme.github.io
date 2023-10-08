@@ -26,7 +26,6 @@ body
 }
 
 /* Rainbow */
-
 #gold
 {
     position: absolute;
@@ -97,8 +96,6 @@ body
 {
     display: none;
 }
-
-
 .rainbow-red
 {
     animation-name: rainbow;
