@@ -5,7 +5,6 @@ const toggleNav = () =>
 
 const contact = () =>
 {
-    console.log("hi")
     const resultDiv = document.getElementById("result");
     const name1 = document.getElementById("txt-name").value;
     const number = parseInt(document.getElementById("txt-number").value);
@@ -28,18 +27,13 @@ const contact = () =>
     p1.textContent = `${email}`;
     p2.textContent = `${contact}`;
 
-}
-
-const goodbye = () => 
-{
     document.getElementById("goodbye").classList.remove("hidden");
-};
 
+}
 
 
 window.onload = () => 
 {
     document.getElementById("hamburger").onclick = toggleNav;
     document.getElementById("button-contact").onclick = contact;
-    document.getElementById("button-right").onclick = goodbye;
 }

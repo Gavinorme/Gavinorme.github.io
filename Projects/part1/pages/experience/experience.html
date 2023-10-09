@@ -8,8 +8,10 @@
 </head>
 
     <body> <!-- add login and add experience -->
-        <header>
-            <h1 id="experience-h1">Experience</h1> <!-- add experience 1 page-->
+        <header class="header">
+            <h1 id="experience-h1">Experience</h1> 
+            <button id="button-login">Login</button>
+        </header>
             <nav id="nav-toggle">
                 <div id="hamburger">
                     <div></div>
@@ -25,7 +27,7 @@
                     <li><a href="../contactMe/contactMe.html">Contact Me</a></li>
                 </ul>
             </div>
-        </header>
+        
 
             <div class="experience">
                 <section id="project1">
@@ -47,6 +49,30 @@
                 </section>
             </div>
         
+            <h2 class="hide" id="addExp">Adding Experience</h2>
+            <div id="p" class="hide">
+                    <p>
+                        <label for="txt-name">Name of Company:</label>
+                        <input type="text" id="txt-name">
+                    </p>
+                    <p>
+                        <label for="txt-description">Description: </label>
+                        <input type="text" id="txt-description">
+                    </p>
+                    <p>
+                        <label for="txt-skills">Skills: </label>
+                        <input type="text" id="txt-skills">
+                    </p>
+                    <p>
+                        <label for="txt-reference">References: </label>
+                        <input type="text" id="txt-reference">
+                    </p>
+            </div>
+            <div id="result"></div>
+
+            <div>
+                <button id="button-add" class="hidden">Add Experience</button>
+            </div>
         
     </body>
 
