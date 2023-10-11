@@ -2,6 +2,7 @@
 body
 {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
 }
 
 
@@ -18,7 +19,7 @@ body
 /* Projects */
 .experience
 {
-    display: inline;
+    background-color: darkkhaki;
 }
 #experience-link 
 {
@@ -29,20 +30,12 @@ body
 /* Buttons */
 #button-login 
 {
-    /* flex: 1; */
-    width: 5%;
+    width: 10%;
     height: 10%;
-}
-#button-add
-{
-    margin-left: 11%;
 }
  
 /* Images */
-#img1
-{
-    margin-left: 35%;
-}
+
 
 
 /* Typeography */
@@ -52,17 +45,7 @@ body
     flex: 1;
     margin-left: 4.5%;
 }
-#project-h2
-{
-    margin-left: 35%;
-    margin-top: 6%;
-}
-#p1
-{
-    width: 50%;
-    margin-left: 35%;
-    margin-right: auto;
-}
+
 label,
 input {
     display: inline-block;
@@ -117,19 +100,43 @@ label {
     {
         display: block;
     }
-    #nav-items li /* fix alignment */
+    #nav-items li 
     {
         display: inline-block;
         justify-content: space-between;
-        margin-left: 10.5%;  /*fix alignment*/
+        margin-left: 10.5%;
+        margin-top: 2%; 
         font-size: 1.5em;
     }
     .experience
     {
         display: flex;
-        justify-content: space-evenly;
-        margin-right: 7%;
         margin-top: 4%;
+        background-color: darkkhaki;
     }
-
+    #p1
+    {
+        padding: 10%;
+        margin: 8%;
+    }
+    #experience-h1
+    {
+        text-align: center;
+    }
+    #project-h2
+    {
+        text-align: center;
+        font-size: large;
+    }
+    #img1
+    {
+        display: block;
+        margin: auto;
+        padding-top: 10px;
+    }
+    #button-login 
+    {
+        width: 5%;
+        height: 10%;
+    }
 }

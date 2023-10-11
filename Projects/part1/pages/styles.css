@@ -2,17 +2,11 @@
 body
 {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
 }
 
 /* Images */
-#img2
-{
-    margin-left: 36%;
-}
-#img3
-{
-    margin-left: 36%;
-}
+
 
 .hidden
 {
@@ -34,16 +28,9 @@ body
 {
     text-align: center;
 }
-#p1
-{
-    text-align: center;
-    width: 60%;
-    margin-left: 20%;
-}
-#portfolio
-{
-    text-align: center;
-}
+
+
+
 
 /* main-nav */
 #hamburger div {
@@ -68,7 +55,7 @@ body
 
 
 
-@media only screen and (min-width: 600px) /* fix mobile for everything */
+@media only screen and (min-width: 600px)
 {
     #hamburger div
     {
@@ -87,5 +74,22 @@ body
         font-size: 1.5em;
         text-align: center;
     }
-
+    #portfolio
+    {
+        text-align: center;
+    }
+    #p1
+    {
+        width: 50%;
+        margin-left: 25%;
+        text-align: center;
+    }
+    #img2
+    {
+        margin-left: 36%;
+    }
+    #img3
+    {
+        margin-left: 36%;
+    }
 }

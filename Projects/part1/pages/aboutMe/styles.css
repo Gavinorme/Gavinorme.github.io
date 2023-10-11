@@ -2,6 +2,7 @@
 body
 {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
 }
 
 
@@ -13,7 +14,8 @@ body
 /* Projects */
 .about
 {
-    display: inline;
+    /* display: inline; */
+    background-color: silver;
 }
 #about-link 
 {
@@ -24,12 +26,9 @@ body
 /* Images */
 #img1
 {
-    margin-left: 35%;
+    /* margin-left: 35%; */
 }
-.img
-{
-    padding: 10px;
-}
+
 
 
 /* Typeography */
@@ -37,17 +36,11 @@ body
 {
     text-align: center;
 }
-#project-h2
+#p15
 {
-    margin-left: 35%;
-    margin-top: 6%;
+    font-size: x-large;
 }
-#p1
-{
-    width: 50%;
-    margin-left: 35%;
-    margin-right: auto;
-}
+
 
 /* main-nav */
 #hamburger div 
@@ -73,20 +66,17 @@ body
 }
 
 /* Main content */
-.education 
+/* .education 
 {
     display: flex;
     background-color: white;
-}
-#p15, #p16
+} */
+/* #p15, #p16
 {
     padding: 10px;
-}
-#p15
-{
-    font-size: x-large;
-}
-.family
+} */
+
+/* .family
 {
     display: flex;
     background-color: white;
@@ -95,7 +85,7 @@ body
 {
     display: flex;
     background-color: white;
-}
+} */
 
 
 
@@ -111,7 +101,7 @@ body
     {
         display: block;
     }
-    #nav-items li /* fix alignment */
+    #nav-items li 
     {
         display: inline-block;
         justify-content: space-between;
@@ -119,10 +109,30 @@ body
         margin-bottom: 2%;
         font-size: 1.5em;
     }
-    .experience
+    #project-h2
+    {
+        text-align: center;
+    }
+    #p15, #p16
+    {
+        padding: 2%;
+        margin: 2%;
+    }
+    .img
+    {
+        display: block;
+        margin: auto;
+        padding: 5px;
+    }
+    #p15
+    {
+        font-size: x-large;
+        text-align: center;
+    }
+    .about
     {
         display: flex;
-        justify-content: space-evenly;
+        background-color:silver;
     }
 
 }
