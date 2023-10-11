@@ -17,21 +17,27 @@ get item() {
 
     const ul = document.createElement("ul");
     section.append(ul);
+    // section.classList.add("text");
     ul.classList.add("hidden");
     ul.append(this.title+ "\n");
-    ul.append("Price: " + this.price);
-    ul.append("age range: " + this.ageRange);
-    ul.append("Rating: " + this.rating);
+    ul.append(this.listItem("Price: " + this.price));
+    ul.append(this.listItem(" Age range: " + this.ageRange));
+    ul.append(this.listItem(" Rating: " + this.rating));
 
-//
-    section.append(this.picture(this.pic));
     section.onmouseover = () => {
         ul.classList.remove("hidden");
+
     };
+    section.append(this.picture(this.pic));
+    
     return section;
 }
 
-
+listItem(info) {
+    const li = document.createElement("li");
+    li.textContent = info;
+    return li;
+}
 
 picture(info) {
     const pic = document.createElement("img");
