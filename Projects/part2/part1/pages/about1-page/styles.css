@@ -1,0 +1,123 @@
+/* Structure */
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hidden
+{
+    display: none;
+}
+
+/* Projects */
+.about
+{
+    display: inline;
+}
+ 
+/* Images */
+#img1
+{
+    margin-left: 35%;
+}
+.img
+{
+    padding: 10px;
+}
+
+
+/* Typeography */
+#project-h1
+{
+    text-align: center;
+}
+#project-h2
+{
+    margin-left: 35%;
+    margin-top: 6%;
+}
+#p1
+{
+    width: 50%;
+    margin-left: 35%;
+    margin-right: auto;
+}
+
+/* main-nav */
+#hamburger div 
+{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.hide-small
+{
+    display: none;
+}
+#nav-items li 
+{
+    list-style-type: none;
+
+}
+#nav-items a 
+{
+    text-decoration: none;
+    color: black;
+}
+
+/* Main content */
+.education 
+{
+    display: flex;
+    background-color: white;
+}
+#p15, #p16
+{
+    padding: 10px;
+}
+#p15
+{
+    font-size: x-large;
+}
+.family
+{
+    display: flex;
+    background-color: white;
+}
+.hobbies
+{
+    display: flex;
+    background-color: white;
+}
+
+
+
+
+
+@media only screen and (min-width: 600px) /* fix mobile for everything */
+{
+    #hamburger div
+    {
+        display: none;
+    }
+    .hide-small
+    {
+        display: block;
+    }
+    #nav-items li /* fix alignment */
+    {
+        display: inline-block;
+        justify-content: space-between;
+        margin-left: 10.5%;  
+        margin-bottom: 2%;
+        font-size: 1.5em;
+    }
+    .experience
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}

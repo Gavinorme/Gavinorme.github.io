@@ -17,7 +17,7 @@ get item() {
 
     const ul = document.createElement("ul");
     section.append(ul);
-    // section.classList.add("text");
+    ul.classList.add("text");
     ul.classList.add("hidden");
     ul.append(this.title+ "\n");
     ul.append(this.listItem("Price: " + this.price));
@@ -26,11 +26,11 @@ get item() {
 
     section.onmouseover = () => {
         ul.classList.remove("hidden");
-
     };
     section.append(this.picture(this.pic));
-    
+
     return section;
+    
 }
 
 listItem(info) {
@@ -62,7 +62,14 @@ const showToys = () => {
     });
 }
 
-//if user hovers showToys
+// const hide = () => {
+//     const section = document.createElement("section");
+//     section.classList.add("toy");
+//     section.onmouseover = () => {
+//         ul.classList.add("hidden");
+//     };
+// }
+
 
 
 window.onload = () => 

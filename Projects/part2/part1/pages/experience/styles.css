@@ -1,0 +1,142 @@
+/* Structure */
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+
+.hidden
+{
+    display: none;
+}
+
+.header
+{
+    display: flex;
+}
+
+/* Projects */
+.experience
+{
+    background-color: darkkhaki;
+}
+#experience-link 
+{
+    text-decoration: none;
+    color: black;
+}
+
+/* Buttons */
+#button-login 
+{
+    width: 10%;
+    height: 10%;
+}
+ 
+/* Images */
+
+
+
+/* Typeography */
+#experience-h1
+{
+    text-align: center;
+    flex: 1;
+    margin-left: 4.5%;
+}
+
+label,
+input {
+    display: inline-block;
+}
+label {
+    width: 125px;
+    text-align: left;
+    padding: 5px;
+}
+
+/* main-nav */
+#hamburger div 
+{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.hide-small
+{
+    display: none;
+}
+.hidden
+{
+    display: none;
+}
+.hide
+{
+   display: none;
+}
+#nav-items li 
+{
+    list-style-type: none;
+
+}
+#nav-items a 
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+@media only screen and (min-width: 600px) /* fix mobile for everything */
+{
+    #hamburger div
+    {
+        display: none;
+    }
+    .hide-small
+    {
+        display: block;
+    }
+    #nav-items li 
+    {
+        display: inline-block;
+        justify-content: space-between;
+        margin-left: 10.5%;
+        margin-top: 2%; 
+        font-size: 1.5em;
+    }
+    .experience
+    {
+        display: flex;
+        margin-top: 4%;
+        background-color: darkkhaki;
+    }
+    #p1
+    {
+        padding: 10%;
+        margin: 8%;
+    }
+    #experience-h1
+    {
+        text-align: center;
+    }
+    #project-h2
+    {
+        text-align: center;
+        font-size: large;
+    }
+    #img1
+    {
+        display: block;
+        margin: auto;
+        padding-top: 10px;
+    }
+    #button-login 
+    {
+        width: 5%;
+        height: 10%;
+    }
+}

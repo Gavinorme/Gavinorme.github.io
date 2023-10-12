@@ -55,7 +55,12 @@ body
     text-align: center;
 }
 
-#toy-list :hover .box
+.text
+{
+    opacity: 1;
+}
+
+#toy-list :hover .middle
 {
     opacity: 1;
     margin-top: 10%;
@@ -68,7 +73,6 @@ img
     margin: auto;
     opacity: 1;
     height: auto;
-    transition: .5s ease;
     backface-visibility: hidden;
 }
 
