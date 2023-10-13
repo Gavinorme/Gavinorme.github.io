@@ -25,12 +25,6 @@ get item() {
     
     section.append(this.picture(this.pic));
 
-    // const opaquePic = (size) =>
-    // {
-    //     document.getElementById("toy").style.setProperty("--x" + size);
-    // }
-    // opaquePic(opacity += 0.3);
-
     section.onmouseover = () => {
         ul.classList.remove("hidden");
     };
@@ -39,7 +33,6 @@ get item() {
     };
 
     return section;
-    
 }
 
 listItem(info) {
@@ -60,24 +53,18 @@ const showToys = () => {
     const toysList = document.getElementById("toy-list");
     const toys = [];
     toys.push(new Toy("Basketball", "20", "1-125", 5, "basketball.png"));
-    toys.push(new Toy("Football", "20", "1-125", 5, "basketball.png"));
-    toys.push(new Toy("Baseball", "20", "1-125", 5, "basketball.png"));
-    toys.push(new Toy("Volleyball", "20", "1-125", 5, "basketball.png"));
-    toys.push(new Toy("Kickball", "20", "1-125", 5, "basketball.png"));
-    toys.push(new Toy("Tennis Ball", "20", "1-125", 5, "basketball.png"));
+    toys.push(new Toy("Football", "20", "1-125", 5, "nflfootball.jpeg"));
+    toys.push(new Toy("Baseball", "20", "1-125", 5, "baseball.jpeg"));
+    toys.push(new Toy("Volleyball", "20", "1-125", 5, "volleyball.jpeg"));
+    toys.push(new Toy("Kickball", "20", "1-125", 5, "kickball.jpg"));
+    toys.push(new Toy("Tennis Ball", "20", "1-125", 5, "tennis.jpeg"));
 
     toys.forEach(toy => {
         toysList.append(toy.item);
     });
 }
 
-// const hide = () => {
-//     const section = document.createElement("section");
-//     section.classList.add("toy");
-//     section.onmouseover = () => {
-//         ul.classList.add("hidden");
-//     };
-// }
+
 
 
 
