@@ -53,11 +53,11 @@ const showToys = () => {
     const toysList = document.getElementById("toy-list");
     const toys = [];
     toys.push(new Toy("Basketball", "20", "1-125", 5, "basketball.png"));
-    toys.push(new Toy("Football", "20", "1-125", 5, "nflfootball.jpeg"));
-    toys.push(new Toy("Baseball", "20", "1-125", 5, "baseball.jpeg"));
-    toys.push(new Toy("Volleyball", "20", "1-125", 5, "volleyball.jpeg"));
-    toys.push(new Toy("Kickball", "20", "1-125", 5, "kickball.jpg"));
-    toys.push(new Toy("Tennis Ball", "20", "1-125", 5, "tennis.jpeg"));
+    toys.push(new Toy("Football", "25", "1-125", 5, "nflfootball.jpeg"));
+    toys.push(new Toy("Baseball", "5", "1-125", 1, "baseball.jpeg"));
+    toys.push(new Toy("Volleyball", "15", "1-125", 4, "volleyball.jpeg"));
+    toys.push(new Toy("Kickball", "3", "1-125", 3, "kickball.jpg"));
+    toys.push(new Toy("Tennis Ball", "2", "1-125", 5, "tennis.jpeg"));
 
     toys.forEach(toy => {
         toysList.append(toy.item);
