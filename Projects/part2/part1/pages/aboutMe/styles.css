@@ -26,7 +26,6 @@ body
 /* Images */
 #img1
 {
-    /* margin-left: 35%; */
 }
 
 
@@ -65,32 +64,6 @@ body
     color: black;
 }
 
-/* Main content */
-/* .education 
-{
-    display: flex;
-    background-color: white;
-} */
-/* #p15, #p16
-{
-    padding: 10px;
-} */
-
-/* .family
-{
-    display: flex;
-    background-color: white;
-}
-.hobbies
-{
-    display: flex;
-    background-color: white;
-} */
-
-
-
-
-
 @media only screen and (min-width: 600px) /* fix mobile for everything */
 {
     #hamburger div
@@ -122,7 +95,8 @@ body
     {
         display: block;
         margin: auto;
-        padding: 5px;
+        width: 350px;
+        height: 300px;
     }
     #p15
     {
@@ -134,5 +108,4 @@ body
         display: flex;
         background-color:silver;
     }
-
 }

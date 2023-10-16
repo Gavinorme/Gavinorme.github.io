@@ -6,7 +6,10 @@ body
 }
 
 /* Images */
-
+#img2
+{
+    
+}
 
 .hidden
 {
@@ -84,12 +87,10 @@ body
         margin-left: 25%;
         text-align: center;
     }
-    #img2
+    #img2, #img3
     {
-        margin-left: 36%;
-    }
-    #img3
-    {
-        margin-left: 36%;
+        margin-left: 32%;
+        width: 500px;
+    height: 300px;
     }
 }
