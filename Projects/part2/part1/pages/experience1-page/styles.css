@@ -33,16 +33,18 @@ body
 {
     text-align: center;
 }
-#project-h2
-{
-    /* margin-left: 35%;
-    margin-top: 6%; */
-}
 #p1
 {
     width: 75%;
-    /*margin-left: 35%;
-    margin-right: auto; */
+}
+#header-h1
+{
+    text-align: center;
+}
+#home-link
+{
+    text-decoration: none;
+    color: black;
 }
 
 /* main-nav */

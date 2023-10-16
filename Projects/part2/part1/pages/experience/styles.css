@@ -33,17 +33,13 @@ body
     width: 10%;
     height: 10%;
 }
- 
-/* Images */
-
-
 
 /* Typeography */
 #experience-h1
 {
-    text-align: center;
+    /* text-align: center;
     flex: 1;
-    margin-left: 4.5%;
+    margin-left: 4.5%; */
 }
 
 label,
@@ -54,6 +50,15 @@ label {
     width: 125px;
     text-align: left;
     padding: 5px;
+}
+#experience-h1
+{
+    
+}
+#home-link
+{
+    text-decoration: none;
+    color: black;
 }
 
 /* main-nav */
@@ -87,10 +92,7 @@ label {
     color: black;
 }
 
-
-
-
-@media only screen and (min-width: 600px) /* fix mobile for everything */
+@media only screen and (min-width: 600px) 
 {
     #hamburger div
     {
@@ -119,9 +121,12 @@ label {
         padding: 10%;
         margin: 8%;
     }
-    #experience-h1
+    header
     {
-        text-align: center;
+        /* text-align: center; */
+        /* margin-left: 75%; */
+        display: flex;
+        justify-content: center;
     }
     #project-h2
     {
@@ -140,5 +145,6 @@ label {
     {
         width: 5%;
         height: 10%;
+        display: block;
     }
 }

@@ -40,6 +40,15 @@ body
     margin-left: 35%;
     margin-right: auto;
 }
+#header-h1
+{
+    text-align: center;
+}
+#home-link
+{
+    text-decoration: none;
+    color: black;
+}
 
 /* main-nav */
 #hamburger div 

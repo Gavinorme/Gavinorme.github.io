@@ -30,6 +30,15 @@ body
     text-align: center;
     margin-top: 5%;
 }
+#header-h1
+{
+    text-align: center;
+}
+#home-link
+{
+    text-decoration: none;
+    color: black;
+}
 
 /* main-nav */
 #hamburger div 
@@ -55,7 +64,6 @@ body
 }
 
 /* main content */
-
 label,
 input {
     display: inline-block;
@@ -66,7 +74,7 @@ label {
     padding: 5px;
 }
 
-@media only screen and (min-width: 600px) /* fix mobile for everything */
+@media only screen and (min-width: 600px) 
 {
     #hamburger div
     {
@@ -76,18 +84,17 @@ label {
     {
         display: block;
     }
-    #nav-items li /* fix alignment */
+    #nav-items li 
     {
         display: inline-block;
         justify-content: space-between;
-        margin-left: 10.5%;  /*fix alignment*/
+        margin-left: 10.5%;
         font-size: 1.5em;
     }
     .contact
     {
         display: flex;
         justify-content: space-evenly;
-        /* margin-right: 7%; */
         margin-top: 4%;
     }
     #content
