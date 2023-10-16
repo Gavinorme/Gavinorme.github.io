@@ -5,6 +5,7 @@ const toggleNav = () =>
 
 const contact = () =>
 {
+
     const resultDiv = document.getElementById("result");
     const name1 = document.getElementById("txt-name").value;
     const number = parseInt(document.getElementById("txt-number").value);
@@ -22,14 +23,16 @@ const contact = () =>
     const p2 = document.createElement("h3");
     section.append(p2);
 
-    h3.textContent = `${name1}`;
-    p.textContent = `${number}`;
-    p1.textContent = `${email}`;
-    p2.textContent = `${contact}`;
+    h3.textContent = `${"Name of Company:  "+ name1}`;
+    p.textContent = `${"Phone Number: " +number}`;
+    p1.textContent = `${"Email: " +email}`;
+    p2.textContent = `${"Contact Reason: " +contact}`;
 
     document.getElementById("goodbye").classList.remove("hidden");
 
 }
+
+
 
 
 window.onload = () => 

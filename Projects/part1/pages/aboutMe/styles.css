@@ -2,7 +2,6 @@
 body
 {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: bisque;
 }
 
 
@@ -14,8 +13,6 @@ body
 /* Projects */
 .about
 {
-    /* display: inline; */
-    background-color: silver;
 }
 #about-link 
 {
@@ -26,7 +23,6 @@ body
 /* Images */
 #img1
 {
-    /* margin-left: 35%; */
 }
 
 
@@ -64,32 +60,6 @@ body
     text-decoration: none;
     color: black;
 }
-
-/* Main content */
-/* .education 
-{
-    display: flex;
-    background-color: white;
-} */
-/* #p15, #p16
-{
-    padding: 10px;
-} */
-
-/* .family
-{
-    display: flex;
-    background-color: white;
-}
-.hobbies
-{
-    display: flex;
-    background-color: white;
-} */
-
-
-
-
 
 @media only screen and (min-width: 600px) /* fix mobile for everything */
 {
@@ -132,7 +102,6 @@ body
     .about
     {
         display: flex;
-        background-color:silver;
     }
 
 }

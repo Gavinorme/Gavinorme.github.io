@@ -2,7 +2,6 @@
 body
 {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: bisque;
 }
 
 /* Images */
@@ -22,7 +21,6 @@ body
 /* Projects */
 .projects
 {
-    background-color: #c0b283;
 }
 #project-link 
 {
@@ -86,7 +84,6 @@ body
     {
         display: flex;
         margin-top: 4%; 
-        background-color: #c0b283;
     }
     #project-h1
     {
@@ -106,5 +103,4 @@ body
         padding: 10%;
         margin: 5%;
     }
-
 }

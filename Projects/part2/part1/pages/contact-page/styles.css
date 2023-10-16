@@ -5,31 +5,18 @@ body
     background-color: bisque;
 }
 
-/* Images */
-.images
-{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 
 .hidden
 {
     display: none;
 }
 
-/* Projects */
-.projects
+/* Contact */
+.contact
 {
-    /* display: inline; */
+    
 }
  
-/* Images */
-#img1
-{
-    margin-left: 35%;
-}
 
 
 /* Typeography */
@@ -37,15 +24,11 @@ body
 {
     text-align: center;
 }
-#project-h2
+
+#goodbye
 {
-    margin-left: 50%;
-    margin-top: 2%;
-}
-#p1
-{
-    margin-left: 10%;
     text-align: center;
+    margin-top: 5%;
 }
 
 /* main-nav */
@@ -63,11 +46,28 @@ body
 #nav-items li 
 {
     list-style-type: none;
+
 }
 #nav-items a 
 {
     text-decoration: none;
     color: black;
+}
+
+/* main content */
+
+label,
+input {
+    display: inline-block;
+}
+label {
+    width: 165px;
+    text-align: left;
+    padding: 5px;
+}
+#myInfo
+{
+    /* margin-right: 10%; */
 }
 
 
@@ -87,17 +87,23 @@ body
     {
         display: inline-block;
         justify-content: space-between;
-        margin-left: 10.5%;  
-        margin-top: 2%;
+        margin-left: 10.5%;  /*fix alignment*/
         font-size: 1.5em;
-        text-align: center;
     }
-    .projects
+    .contact
     {
         display: flex;
         justify-content: space-evenly;
-        margin-right: 7%;
+        /* margin-right: 7%; */
         margin-top: 4%;
     }
-
+    #content
+    {
+        flex: 1;
+        margin-left: 10.5%; 
+    }
+    #myInfo
+    {
+        margin-right: 10%;
+    }
 }

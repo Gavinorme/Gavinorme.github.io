@@ -2,6 +2,7 @@
 body
 {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
 }
 
 
@@ -71,7 +72,7 @@ body
 .education 
 {
     display: flex;
-    background-color: white;
+    background-color: brown;
 }
 #p15, #p16
 {

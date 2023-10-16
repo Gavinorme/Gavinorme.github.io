@@ -12,9 +12,14 @@ body
 }
 
 /* Contact */
-.contact
+#contact-link 
 {
-    
+    text-decoration: none;
+    color: black;
+}
+#result
+{
+    background-color: gray;
 }
  
 
