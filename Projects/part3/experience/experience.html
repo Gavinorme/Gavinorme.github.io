@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="script.js"></script> 
+</head>
+
+    <body>
+        <header class="header">
+            <a id="home-link" href= "../index.html"><h1 id="experience-h1">Gavin Orme's Computer Information Portfolio</h1></a>
+            <button id="button-login">Login</button>
+        </header>
+            <nav id="nav-toggle">
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>    
+                <div id="nav-items" class="hide-small">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../projects/projects.html">My Projects</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="../aboutMe/aboutMe.html">About Me</a></li>
+                    <li><a href="../contactMe/contactMe.html">Contact Me</a></li>
+                </ul>
+            </div>
+        
+
+            <div class="experience">
+                <section id="project1">
+                    <a id="experience-link" href="../experience1-page/index.html"><img id="img1" src="images/web.jpeg"></a>
+                    <a id="experience-link" href="../experience1-page/index.html"><h2 id="project-h2">Web Application Development</h2></a>
+                    <p id="p1">In my experience of web application development I created an app to fix my campus's problem of not knowing what food is available until after you sign in. My app also showed wait times, dietary restrictions, and directions to get there. During this project I used sketches, personas, and a final prototype to complete my application.
+                         </p>
+                </section>
+
+                <section id="project2">
+                    <img id="img1" src="images/waiters.jpeg">
+                    <h2 id="project-h2">Waiter's Choice Catering</h2>
+                    <p id="p1">In my experience at Waiter's Choice I served and prepared cliental appetizers, lunch, dinner, etc. To achieve this I communicated with team members to run events such as weddings, birthday parties, corporate catering, etc. Other responsibilities included assisting with paperwork, organizing events, and doing dishes.
+                         </p>
+                </section>
+
+                <section id="project3">
+                    <img id="img1" src="images/firehouse.jpeg">
+                    <h2 id="project-h2">Firehouse Subs</h2>
+                    <p id="p1">In my experience at Firehouse Subs I served on the line to make food for customers. I also closed the restaurant by replenishing, cleaning, and organizing the store. During my time I also assigned roles for other employees to assist with serving customers during busy rushes.
+                         </p>
+                </section>
+            </div>
+        
+            <h2 class="hide" id="addExp">Adding Experience</h2>
+            <div id="p" class="hide">
+                    <p>
+                        <label for="txt-name">Name of Company:</label>
+                        <input type="text" id="txt-name">
+                    </p>
+                    <p>
+                        <label for="txt-description">Description: </label>
+                        <input type="text" id="txt-description">
+                    </p>
+                    <p>
+                        <label for="txt-skills">Skills: </label>
+                        <input type="text" id="txt-skills">
+                    </p>
+                    <p>
+                        <label for="txt-reference">References: </label>
+                        <input type="text" id="txt-reference">
+                    </p>
+            </div>
+            <div id="result"></div>
+
+            <div>
+                <button id="button-add" class="hidden">Add Experience</button>
+            </div>
+        
+    </body>
+
+</html>

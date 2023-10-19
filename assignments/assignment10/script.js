@@ -52,7 +52,7 @@ picture(info) {
 const showToys = () => {
     const toysList = document.getElementById("toy-list");
     const toys = [];
-    toys.push(new Toy("Basketball", "20", "1-125", 5, "basketball.png"));
+    toys.push(new Toy("Basketball", "20", "1-125", 5, "Basketball.png"));
     toys.push(new Toy("Football", "25", "1-125", 5, "nflfootball.jpeg"));
     toys.push(new Toy("Baseball", "5", "1-125", 1, "baseball.jpeg"));
     toys.push(new Toy("Volleyball", "15", "1-125", 4, "volleyball.jpeg"));

@@ -1,0 +1,116 @@
+/* Structure */
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+/* Images */
+.images
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.hidden
+{
+    display: none;
+}
+
+/* Projects */
+.projects
+{
+    /* display: inline; */
+}
+ 
+/* Images */
+#img1
+{
+    margin-left: 35%;
+}
+
+
+/* Typeography */
+#project-h1
+{
+    text-align: center;
+}
+#project-h2
+{
+    margin-left: 50%;
+    margin-top: 2%;
+}
+#p1
+{
+    margin-left: 10%;
+    text-align: center;
+}
+#header-h1
+{
+    text-align: center;
+}
+#home-link
+{
+    text-decoration: none;
+    color: black;
+}
+
+/* main-nav */
+#hamburger div 
+{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.hide-small
+{
+    display: none;
+}
+#nav-items li 
+{
+    list-style-type: none;
+}
+#nav-items a 
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+@media only screen and (min-width: 600px) /* fix mobile for everything */
+{
+    #hamburger div
+    {
+        display: none;
+    }
+    .hide-small
+    {
+        display: block;
+    }
+    #nav-items li /* fix alignment */
+    {
+        display: inline-block;
+        justify-content: space-between;
+        margin-left: 10.5%;  
+        margin-top: 2%;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .projects
+    {
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 7%;
+        margin-top: 4%;
+    }
+    #img1
+    {
+        width: 500px;
+        height: 250px;
+    }
+}

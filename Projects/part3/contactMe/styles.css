@@ -1,0 +1,127 @@
+/* Structure */
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+
+.hidden
+{
+    display: none;
+}
+
+/* Contact */
+#contact-link 
+{
+    text-decoration: none;
+    color: black;
+}
+#result
+{
+    background-color: gray;
+}
+ 
+
+
+/* Typeography */
+#project-h1
+{
+    text-align: center;
+}
+
+#goodbye
+{
+    text-align: center;
+    margin-top: 5%;
+}
+#header-h1
+{
+    text-align: center;
+}
+#home-link
+{
+    text-decoration: none;
+    color: black;
+}
+
+/* main-nav */
+#hamburger div 
+{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.hide-small
+{
+    display: none;
+}
+#nav-items li 
+{
+    list-style-type: none;
+
+}
+#nav-items a 
+{
+    text-decoration: none;
+    color: black;
+}
+
+/* main content */
+
+label,
+input {
+    display: inline-block;
+}
+label {
+    width: 165px;
+    text-align: left;
+    padding: 5px;
+}
+#myInfo
+{
+    /* margin-right: 10%; */
+}
+
+
+
+
+@media only screen and (min-width: 600px) /* fix mobile for everything */
+{
+    #hamburger div
+    {
+        display: none;
+    }
+    .hide-small
+    {
+        display: block;
+    }
+    #nav-items li /* fix alignment */
+    {
+        display: inline-block;
+        justify-content: space-between;
+        margin-left: 10.5%;  /*fix alignment*/
+        font-size: 1.5em;
+    }
+    .contact
+    {
+        display: flex;
+        justify-content: space-evenly;
+        /* margin-right: 7%; */
+        margin-top: 4%;
+    }
+    #content
+    {
+        flex: 1;
+        margin-left: 10.5%; 
+    }
+    #myInfo
+    {
+        margin-right: 10%;
+    }
+    #contactMe
+    {
+        font-size: 2.0em;
+    }
+}
