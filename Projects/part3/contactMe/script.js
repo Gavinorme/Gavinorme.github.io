@@ -34,9 +34,8 @@ const contact = () =>
 
 
 
-
 window.onload = () => 
 {
     document.getElementById("hamburger").onclick = toggleNav;
-    document.getElementById("button-contact").onclick = contact;
+    document.getElementById("button-contact").onsubmit = contact;
 }

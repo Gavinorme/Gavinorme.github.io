@@ -28,6 +28,17 @@
 
             <div class="contact">
                 <div id="content">
+                    <form
+                    id="contact-form"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                    >
+                    <input
+                        type="hidden"
+                        name="access_key"
+                        value="Put your access key here"
+                    />
+                    
                     <h2 id="contactMe">Leave Your Information Down Below to Contact Me!</h2>
                     <p>
                         <label for="txt-name">Name of Company:</label>
@@ -35,7 +46,7 @@
                     </p>
                     <p>
                         <label for="txt-number">Phone Number: </label>
-                        <input type="tel" id="txt-number">
+                        <input type="tel" id="txt-number" required>
                     </p>
                     <p>
                         <label for="txt-email">Email:</label>
@@ -43,10 +54,25 @@
                     </p>
                     <p>
                         <label for="txt-contact">Reason for Contacting:</label>
-                        <input type="text" id="txt-contact">
+                        <input type="text" id="txt-contact" required>
                     </p>
-                    <button id="button-contact">Contact</button>
+
+                    <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://web3forms.com/success"
+                    />
+
+                    <input
+                    type="hidden"
+                    name="subject"
+                    value="Contact from Gavin's Portfolio"
+                    />
+                    <input type="hidden" name="from_name" value="My Website" />
+
+                    <button type="submit" id="button-contact">Contact</button>
                     <a id="contact-link" href="../contact-page/index.html"><div id="result"></div></a>
+                    </form>
                 </div>
 
                 <div id="myInfo">
@@ -55,6 +81,7 @@
                     <p>Email: Gorme@email.sc.edu</p>
                 </div>
             </div>
+            <script src="contactme.js"></script>
     </body>
 
 </html>
