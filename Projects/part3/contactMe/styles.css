@@ -19,7 +19,7 @@ body
 }
 #result
 {
-    background-color: gray;
+    /* background-color: gray; */
 }
  
 
@@ -119,6 +119,7 @@ label {
     #myInfo
     {
         margin-right: 10%;
+        margin-top: 1%;
     }
     #contactMe
     {
