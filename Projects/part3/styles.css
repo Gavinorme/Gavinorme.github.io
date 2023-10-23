@@ -33,6 +33,20 @@ body
     text-decoration: none;
     color: black;
 }
+#resume-header
+{
+    text-align: center;
+    color: black;
+}
+#resume a
+{
+    text-decoration: none;
+}
+#resume :hover
+{
+    color:brown;
+}
+
 
 
 

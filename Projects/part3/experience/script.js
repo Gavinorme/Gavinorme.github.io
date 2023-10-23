@@ -14,6 +14,7 @@ const showExp = () =>
 {
     const resultDiv = document.getElementById("result");
     const name1 = document.getElementById("txt-name").value;
+    const age = document.getElementById("txt-age").value;
     const description = document.getElementById("txt-description").value;
     const skills = document.getElementById("txt-skills").value;
     const reference = document.getElementById("txt-reference").value;
@@ -24,6 +25,8 @@ const showExp = () =>
     section.append(h1);
     const h3 = document.createElement("h3");
     section.append(h3);
+    const p3 = document.createElement("p");
+    section.append(p3);
     const p = document.createElement("p");
     section.append(p);
     const p1 = document.createElement("p");
@@ -32,10 +35,11 @@ const showExp = () =>
     section.append(p2);
 
     h1.textContent = `Your form has been submitted successfully`;
-    h3.textContent = `${name1}`;
-    p.textContent = `${description}`;
-    p1.textContent = `${skills}`;
-    p2.textContent = `${reference}`;
+    h3.textContent = `${"Name of Company: " +name1}`;
+    p3.textContent = `${"Age: " + age}`;
+    p.textContent = `${"Description: " +description}`;
+    p1.textContent = `${"Skills: "+ skills}`;
+    p2.textContent = `${"References: "+reference}`;
 
     document.getElementById("button-add").classList.remove("hidden");
 }
