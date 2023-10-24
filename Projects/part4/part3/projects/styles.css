@@ -1,0 +1,123 @@
+/* Structure */
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+/* Images */
+.images
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#img1
+{
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 150px;
+}
+
+
+.hidden
+{
+    display: none;
+}
+
+/* Projects */
+.projects
+{
+    background-color: #c0b283;
+}
+#project-link 
+{
+    text-decoration: none;
+    color: black;
+}
+
+/* Typeography */
+#header-h1
+{
+    text-align: center;
+}
+#home-link
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* main-nav */
+#hamburger div 
+{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.hide-small
+{
+    display: none;
+}
+#nav-items li 
+{
+    list-style-type: none;
+}
+#nav-items a 
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+@media only screen and (min-width: 600px) /* fix mobile for everything */
+{
+    #hamburger div
+    {
+        display: none;
+    }
+    .hide-small
+    {
+        display: block;
+    }
+    #nav-items li /* fix alignment */
+    {
+        display: inline-block;
+        justify-content: space-between;
+        margin-left: 10.5%;  
+        margin-top: 2%;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .projects
+    {
+        display: flex;
+        margin-top: 4%; 
+        background-color: #c0b283;
+    }
+    #project-h1
+    {
+        text-align: center;
+    }
+    #project-h2
+    {
+        text-align: center;
+    }
+    #img1
+    {
+        display: block;
+        margin: auto;
+        width: 250px;
+        height: 150px;
+    }
+    #p1
+    {
+        padding: 10%;
+        margin: 5%;
+    }
+
+}
