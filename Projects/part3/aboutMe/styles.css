@@ -24,8 +24,17 @@ body
 }
  
 /* Images */
-#img1
+.img
 {
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 300px;
+}
+#iframe
+{
+    width: 200px;
+    height: 300px;
 }
 
 

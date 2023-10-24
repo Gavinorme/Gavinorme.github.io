@@ -12,6 +12,13 @@ body
     margin-right: auto;
     display: block;
 }
+#img1
+{
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 150px;
+}
 
 
 .hidden
@@ -29,10 +36,6 @@ body
     text-decoration: none;
     color: black;
 }
- 
-/* Images */
-
-
 
 /* Typeography */
 #header-h1

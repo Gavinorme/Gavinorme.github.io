@@ -25,7 +25,13 @@ body
 }
  
 /* Images */
-
+#img1
+{
+    width: 200px;
+    height: 350px;
+    margin-left: 10%;
+    padding: 5px;
+}
 
 
 /* Typeography */
@@ -100,6 +106,8 @@ body
     #img1
     {
         width: 500px;
-        height: 450px;
+        height: 525px;
+        padding: 10px;
+        /* margin-right: 10%; */
     }
 }

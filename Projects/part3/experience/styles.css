@@ -6,6 +6,16 @@ body
 }
 
 
+/* Images */
+#img1
+{
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    width: 300px;
+    height: 150px;
+}
+
 .hidden
 {
     display: none;
@@ -123,8 +133,6 @@ label {
     }
     header
     {
-        /* text-align: center; */
-        /* margin-left: 75%; */
         display: flex;
         justify-content: center;
     }
@@ -136,7 +144,6 @@ label {
     #img1
     {
         display: block;
-        margin: auto;
         padding-top: 10px;
         width: 300px;
         height: 150px;

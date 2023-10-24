@@ -20,7 +20,8 @@ body
 /* Images */
 .img
 {
-    /* padding: 10px; */
+    width: 275px;
+    height: 465px;
 }
 
 

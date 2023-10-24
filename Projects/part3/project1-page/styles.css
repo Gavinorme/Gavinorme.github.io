@@ -8,9 +8,15 @@ body
 /* Images */
 .images
 {
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: auto;
-    display: block;
+    display: block; */
+}
+#img1
+{
+    margin-left:10%;
+    width: 500px;
+    height: 250px;
 }
 
 
@@ -25,11 +31,7 @@ body
     /* display: inline; */
 }
  
-/* Images */
-#img1
-{
-    margin-left: 35%;
-}
+
 
 
 /* Typeography */
@@ -110,6 +112,7 @@ body
     }
     #img1
     {
+        margin-left: 35%;
         width: 500px;
         height: 250px;
     }
