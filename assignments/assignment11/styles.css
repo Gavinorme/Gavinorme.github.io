@@ -1,0 +1,56 @@
+/* Structure */
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cornflowerblue;
+}
+
+section{
+    display: flex;
+    border: 5px solid lightblue;
+}
+section ul{
+    
+}
+section li{
+    list-style-type: none;
+    font-weight: bold;
+}
+section p{
+    font-weight: bold;
+}
+#movies-section
+{
+    
+}
+
+/* Typography */
+#heading
+{
+    text-align: center;
+}
+
+/* Images */
+section img{
+    width: 250px;
+    height: 250px;
+}
+.zoom {
+    padding: 50px;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .zoom:hover {
+    transform: scale(1.5);
+  }
+
+  @media only screen and (min-width: 600px) {
+    img:hover{
+        width: 40%;
+    }
+    img{
+        width: 25%;
+    }
+}
