@@ -4,9 +4,13 @@ body
     font-family: Arial, Helvetica, sans-serif;
     background-color: cornflowerblue;
 }
+#movies-section
+{
+    /* display: flex; */
+}
 
 section{
-    display: flex;
+    /* display: flex; */
     border: 5px solid lightblue;
 }
 section ul{
@@ -19,16 +23,31 @@ section li{
 section p{
     font-weight: bold;
 }
-#movies-section
+.movie
 {
-    
+    display: flex;
 }
+.section2
+{
+    border: none;
+}
+.section3
+{
+    border: none;
+}
+
+
 
 /* Typography */
 #heading
 {
     text-align: center;
 }
+.title
+{
+    /* font-size: x-large; */
+}
+
 
 /* Images */
 section img{
@@ -40,7 +59,7 @@ section img{
     transition: transform .2s;
     width: 200px;
     height: 200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
   .zoom:hover {
     transform: scale(1.5);

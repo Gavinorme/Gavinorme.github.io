@@ -20,7 +20,7 @@ const showMovies = async () => {
 
 const getMovieItem = (movie) => {
     let section = document.createElement("section");
-
+    section.classList.add("movie");
     let h1 = document.createElement("img");
     let url = "https://portiaportia.github.io/json/";
     h1.src = url+movie.img;
@@ -29,7 +29,8 @@ const getMovieItem = (movie) => {
 
     let ul = document.createElement("ul");
     section.append(ul);
-    ul.append(getLi(movie.title));
+    // section.classList.add("title");
+    ul.append(getTitle(movie.title));
     ul.append(getLi(`Director: `+movie.director));
     ul.append(getActors(movie.actors));
     ul.append(getLi(`Year: `+movie.year));
@@ -40,6 +41,12 @@ const getMovieItem = (movie) => {
     return section;
 };
 
+const getTitle = title => {
+    const h1 = document.createElement("h1");
+    h1.textContent = title;
+    return h1;
+}
+
 const getLi = data => {
     const li = document.createElement("li");
     li.textContent = data;
@@ -47,31 +54,30 @@ const getLi = data => {
 };
 
 const getActors = (movie) => {
-    const section = document.createElement("section");
-    const h3 = document.createElement("h3");
-    h3.textContent = `Actors: `;
-    section.append(h3);
+    const section2 = document.createElement("section");
+    section2.classList.add("section2");
 
+    const p = document.createElement("p");
+    p.innerHTML = "Actors: ";
     movie.forEach(actor => {
-        const p = document.createElement("p");
-        p.textContent = actor;
-        section.append(p);
+        
+        p.textContent += (actor + `, `);
     })
-    return section;
+    section2.append(p);
+    return section2;
 };
 
 const getGenres = (genres) => {
-    const section = document.createElement("section");
-    const h3 = document.createElement("h3");
-    h3.textContent = `Genres: `;
-    section.append(h3);
+    const section3 = document.createElement("section");
+    section3.classList.add("section3");
 
+    const p = document.createElement("p");
+    p.innerHTML = "Genres: ";
     genres.forEach(genre => {
-        const p = document.createElement("p");
-        p.textContent = genre;
-        section.append(p);
+        p.textContent += (genre + `, `);
     })
-    return section;
+    section3.append(p);
+    return section3;
 };
 
 
