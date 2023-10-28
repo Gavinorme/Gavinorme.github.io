@@ -27,10 +27,10 @@ const getProjectItem = (project) =>
 {
     let section = document.createElement("section");
     section.classList.add("project");
-    let h1 = document.createElement("img");
-    let url = "https://Gavinorme.github.io/json/";
-    h1.src = url+project.img;
-    section.append(h1);
+    // let h1 = document.createElement("img");
+    // let url = "https://Gavinorme.github.io/json/";
+    // h1.src = url+project.img;
+    // section.append(h1);
 
     let ul = document.createElement("ul");
     section.append(ul);
@@ -38,6 +38,12 @@ const getProjectItem = (project) =>
 
 
     return section;
+};
+
+const getLi = data => {
+    const li = document.createElement("li");
+    li.textContent = data;
+    return li;
 };
 
 window.onload = () => 
