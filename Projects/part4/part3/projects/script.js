@@ -27,15 +27,16 @@ const getProjectItem = (project) =>
 {
     let section = document.createElement("section");
     section.classList.add("project");
-    // let h1 = document.createElement("img");
-    // let url = "https://Gavinorme.github.io/json/";
-    // h1.src = url+project.img;
-    // section.append(h1);
 
+    //image
+    let h2 = document.createElement("img");
+    h2.src = project.img;
+    section.append(h2);
+
+    //text
     let ul = document.createElement("ul");
     section.append(ul);
     ul.append(getTitle(project.title));
-
     ul.append(getDescript(project.descript));
 
 
@@ -49,11 +50,25 @@ const getTitle = title => {
     return h1;
 }
 
+// const getImg = img => {
+//     const section3 = document.createElement("section");
+//     section3.classList.add("section3");
+//     const p = document.createElement("img");
+//     p.innerHTML = project.img;
+//     section3.append(p);
+//     return section3;
+// }
+
 const getDescript = descript => {
+    // const section2 = document.createElement("section");
+    // section2.classList.add("section2");
     const p = document.createElement("p");
     p.textContent = descript;
     return p;
+    // section2.append(p);
+    // return section2;
 }
+
 
 const getLi = data => {
     const li = document.createElement("li");
