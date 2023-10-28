@@ -34,11 +34,26 @@ const getProjectItem = (project) =>
 
     let ul = document.createElement("ul");
     section.append(ul);
-    ul.append(getLi(project.title));
+    ul.append(getTitle(project.title));
+
+    ul.append(getDescript(project.descript));
+
 
 
     return section;
 };
+
+const getTitle = title => {
+    const h1 = document.createElement("h1");
+    h1.textContent = title;
+    return h1;
+}
+
+const getDescript = descript => {
+    const p = document.createElement("p");
+    p.textContent = descript;
+    return p;
+}
 
 const getLi = data => {
     const li = document.createElement("li");
