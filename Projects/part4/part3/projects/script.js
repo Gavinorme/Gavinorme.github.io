@@ -29,7 +29,10 @@ const getProjectItem = (project) =>
     // section.classList.add("projects");
 
     //link
-    section.classList.add("link");
+    let h3 = document.createElement("p");
+    section.append(h3);
+    h3.href= project.a;
+    h3.classList.add("link");
 
 
     //text
