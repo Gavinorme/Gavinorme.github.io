@@ -29,7 +29,7 @@ const getProjectItem = (project) =>
     // section.classList.add("projects");
 
     //link
-    // section.classList.add("link");
+    section.classList.add("link");
 
 
     //text
