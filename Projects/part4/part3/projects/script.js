@@ -26,25 +26,26 @@ const showProjects  = async () => {
 const getProjectItem = (project) => 
 {
     let section = document.createElement("section");
-    // section.classList.add("projects");
 
+    //link
+    let h4 = document.createElement("a");
+    section.append(h4);
+    h4.href = project.a;
+    h4.classList.add("link");
+    //text
+    let p = document.createElement("p");
+    h4.append(p);
+    p.append(getTitle(project.title));
     //link
     let h3 = document.createElement("a");
     section.append(h3);
-    h3.href= project.a;
+    h3.href = project.a;
     h3.classList.add("link");
-
-
-    //text
-    let p = document.createElement("p");
-    section.append(p);
-    // p.classList.add("text");
-    p.append(getTitle(project.title));
     //images
     let h2 = document.createElement("img");
     h2.src = project.img;
     h2.classList.add("image");
-    section.append(h2);
+    h3.append(h2);
     //descript
     p.classList.add("descript");
     p.append(getDescript(project.descript));
