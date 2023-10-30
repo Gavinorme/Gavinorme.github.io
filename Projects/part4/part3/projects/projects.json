@@ -1,24 +1,24 @@
 [
     {
-        "a:": "../project1-page/index.html",
+        "a": "../project1-page/index.html",
         "title": "Project 1",
         "img": "images/assignment6.png",
         "descript": "In this assignment I made a webpage that incorporates javascript so that pictures can show and dance when clicked and user's are able to input text."
     },
     {
-        "a:": "#",
+        "a": "#",
         "title": "Project 2",
         "img": "images/assignment7.png",
         "descript": "In this assignment I made a webpage that compares ages between three people from oldest to youngest and also shows funds raised using a graphic."
     },
     {
-        "a:": "#",
+        "a": "#",
         "title": "Project 3",
         "img": "images/assign8.png",
         "descript": "In this assignment I made a webpage that has a walking and then running man that goes across the screen and also shows funds raised using a graphic."
     },
     {
-        "a:": "#",
+        "a": "#",
         "title": "Project 4",
         "img": "images/assign9.png",
         "descript": "In this assignment I made a webpage that loops through five impactful quotes and makes an animated rainbow that ends with a pot of gold once finished."
