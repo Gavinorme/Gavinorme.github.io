@@ -1,0 +1,134 @@
+/* Structure */
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+
+.hidden
+{
+    display: none;
+}
+
+/* Projects */
+.about
+{
+    /* display: inline; */
+    background-color: silver;
+}
+#about-link 
+{
+    text-decoration: none;
+    color: black;
+}
+ 
+/* Images */
+.img
+{
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 300px;
+}
+#iframe
+{
+    width: 200px;
+    height: 300px;
+}
+
+
+
+/* Typeography */
+#project-h1
+{
+    text-align: center;
+}
+#p15
+{
+    font-size: x-large;
+}
+#header-h1
+{
+    text-align: center;
+}
+#home-link
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* main-nav */
+#hamburger div 
+{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.hide-small
+{
+    display: none;
+}
+#nav-items li 
+{
+    list-style-type: none;
+
+}
+#nav-items a 
+{
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (min-width: 600px) /* fix mobile for everything */
+{
+    #hamburger div
+    {
+        display: none;
+    }
+    .hide-small
+    {
+        display: block;
+    }
+    #nav-items li 
+    {
+        display: inline-block;
+        justify-content: space-between;
+        margin-left: 10.5%;  
+        margin-bottom: 2%;
+        font-size: 1.5em;
+    }
+    #project-h2
+    {
+        text-align: center;
+    }
+    #p15, #p16
+    {
+        padding: 2%;
+        margin: 2%;
+    }
+    .img
+    {
+        display: block;
+        margin: auto;
+        width: 350px;
+        height: 300px;
+    }
+    #p15
+    {
+        font-size: x-large;
+        text-align: center;
+    }
+    .about
+    {
+        display: flex;
+        background-color:silver;
+    }
+    #iframe
+    {
+        margin-left: 70%;
+        width: 427px;
+    }
+}
