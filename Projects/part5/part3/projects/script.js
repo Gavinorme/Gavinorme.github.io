@@ -4,7 +4,7 @@ const toggleNav = () =>
 };
 
 const getProjects = async () => {
-    const url = "https://Gavinorme.github.io/Projects/part4/part3/projects/projects.json";
+    const url = "https://Gavinorme.github.io/Projects/part5/part3/projects/projects.json";
 
     try {
         const reponse = await fetch(url);
@@ -71,6 +71,12 @@ const getLi = data => {
     li.textContent = data;
     return li;
 };
+
+
+
+
+
+
 
 window.onload = () => 
 {

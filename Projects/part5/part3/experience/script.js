@@ -10,6 +10,7 @@ const show = () =>
     document.getElementById("button-add").classList.remove("hidden");
 }
 
+
 const showExp = () =>
 {
     const resultDiv = document.getElementById("result");
