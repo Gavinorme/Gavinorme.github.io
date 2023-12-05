@@ -35,6 +35,10 @@ a
     text-decoration: none;
     color: black;
 }
+.transparent {
+    display: none;
+}
+
 
 /* Typeography */
 #header-h1

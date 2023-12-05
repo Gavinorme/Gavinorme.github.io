@@ -44,10 +44,6 @@ app.get("/api/projects", (req, res) => {
     res.send(projects);
 });
 
-
-
-
-
 app.get("/api/projects/:id", (req, res) => {
     const id = parseInt(req.params.id);
 
