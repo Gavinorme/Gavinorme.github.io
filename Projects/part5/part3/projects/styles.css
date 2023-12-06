@@ -19,14 +19,14 @@ body
 {
     display: none;
 }
-.col1of2, img
+/* .col1of2, img
 {
     width: 30%;
-    display: flex;
-}
+    display: block;
+} */
 
 /* Projects */
-#projects
+.projects
 {
     background-color: #c0b283;
 }
@@ -43,7 +43,14 @@ a
 .transparent {
     display: none;
 }
-
+#add-project-container
+{
+    /* background-color: aliceblue; */
+}
+#add-link
+{
+    font-size: 28px;
+}
 
 /* Typeography */
 #header-h1
@@ -101,7 +108,7 @@ a
         font-size: 1.5em;
         text-align: center;
     }
-    #projects
+    .projects
     {
         display: flex;
         margin-top: 4%; 
