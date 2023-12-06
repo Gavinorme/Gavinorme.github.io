@@ -5,7 +5,7 @@ const toggleNav = () =>
 
 const getProjects = async () => {
     try {
-        const response = (await fetch("/api/projects")).json();
+        const response = (await fetch("/api/projects"));
         return await response.json();
     } catch (error) {
         console.log(error);
@@ -33,6 +33,10 @@ const showProjects  = async () => {
         section.append(img);
         img.src = project.img;
         } 
+
+        const h4 = document.createElement("p");
+        h4.innerHTML = project.descript;
+        a.append(h4);
 
         a.onclick = (e) => {
             e.preventDefault();
@@ -118,14 +122,14 @@ const addProject = async (e) =>
         formData.delete("_id");
         // console.log(...formData);
     
-        response = await fetch("/api/projects", {
+        response = await fetch(`/api/projects`, {
             method: "POST",
             body: formData,
         });
     }
 
         else { //existing player
-            response = await fetch(`/api/projectss/${form._id.value}`,{
+            response = await fetch(`/api/projects/${form._id.value}`,{
                 method: "PUT",
                 body: formData,
             });

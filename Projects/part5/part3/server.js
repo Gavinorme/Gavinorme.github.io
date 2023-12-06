@@ -56,16 +56,18 @@ app.get("/api/projects/:id", (req, res) => {
 });
 
 app.post("/api/projects", upload.single("img"), (req, res)=> {
+    
     const result = validateProject(req.body);
-
+    
     if(result.error) {
         res.status(400).send(result.error.details[0].message);
+        console.log("after error");
         return;
     }
-
+    console.log("before project");
     const project = {
         _id: projects.length + 1,
-        a: req.body.a,
+        // a: req.body.a,
         title: req.body.title,
         descript: req.body.descript,
     };
@@ -119,9 +121,10 @@ app.delete("/api/project/:id", (req, res) => {
 const validateProject = (project) => {
     const schema = Joi.object({
         _id: Joi.allow(""),
-        a: Joi.string().min(3).required(),
+        // a: Joi.string().min(3).required(),
         title: Joi.string().min(3).required(),
         descript: Joi.string().min(3).required(),
+        img: Joi.optional(),
     });
 
     return schema.validate(project);
