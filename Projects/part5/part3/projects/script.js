@@ -5,7 +5,7 @@ const toggleNav = () =>
 
 const getProjects = async () => {
     try {
-        const response = (await fetch("/api/projects"));
+        const response = (await fetch("http://localhost:3000/api/projects"));
         return await response.json();
     } catch (error) {
         console.log(error);
@@ -31,7 +31,7 @@ const showProjects  = async () => {
         if(project.img) {
         const img = document.createElement("img");
         section.append(img);
-        img.src = project.img;
+        img.src = "http://localhost:3000/" + project.img;
         } 
 
         const h4 = document.createElement("p");
@@ -84,7 +84,7 @@ const displayDetails = (project) =>
 
 
 const deleteProject = async (project) => {
-    let response = await fetch(`/api/projects/${project.id}`, { //fix
+    let response = await fetch(`http://localhost:3000/api/projects/${project.id}`, { //fix
         method: "DELETE",
         headers: {
             "Content-Type": "application/json;charset=utf-8",
@@ -122,14 +122,14 @@ const addProject = async (e) =>
         formData.delete("_id");
         // console.log(...formData);
     
-        response = await fetch(`/api/projects`, {
+        response = await fetch("http://localhost:3000/api/projects", {
             method: "POST",
             body: formData,
         });
     }
 
         else { //existing player
-            response = await fetch(`/api/projects/${form._id.value}`,{
+            response = await fetch(`http://localhost:3000/api/projects/${form._id.value}`,{
                 method: "PUT",
                 body: formData,
             });
