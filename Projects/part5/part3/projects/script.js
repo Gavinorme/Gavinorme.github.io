@@ -5,7 +5,7 @@ const toggleNav = () =>
 
 const getProjects = async () => {
     try {
-        const response = (await fetch("api/projects/")).json();
+        const response = (await fetch("/api/projects")).json();
         return await response.json();
     } catch (error) {
         console.log(error);
@@ -80,7 +80,7 @@ const displayDetails = (project) =>
 
 
 const deleteProject = async (project) => {
-    let response = await fetch(`https://node-server4.onrender.com/api/players/${project.id}`, { //fix
+    let response = await fetch(`/api/projects/${project.id}`, { //fix
         method: "DELETE",
         headers: {
             "Content-Type": "application/json;charset=utf-8",
@@ -118,14 +118,14 @@ const addProject = async (e) =>
         formData.delete("_id");
         // console.log(...formData);
     
-        response = await fetch("https://node-server4.onrender.com/api/players", {
+        response = await fetch("/api/projects", {
             method: "POST",
             body: formData,
         });
     }
 
         else { //existing player
-            response = await fetch(`https://node-server4.onrender.com/api/players/${form._id.value}`,{
+            response = await fetch(`/api/projectss/${form._id.value}`,{
                 method: "PUT",
                 body: formData,
             });
@@ -134,7 +134,7 @@ const addProject = async (e) =>
         console.log("Error contacting server");
         return;
     }
-    player = await response.json();
+    project = await response.json();
 
     //in edit mode
     if(form._id.value != -1)
@@ -196,24 +196,24 @@ const showHideAdd = (e) => {
 //     return section;
 // };
 
-const getTitle = title => {
-    const h1 = document.createElement("h1");
-    h1.textContent = title;
-    return h1;
-}
+// const getTitle = title => {
+//     const h1 = document.createElement("h1");
+//     h1.textContent = title;
+//     return h1;
+// }
 
-const getDescript = descript => {
-    const p = document.createElement("p");
-    p.textContent = descript;
-    return p;
-}
+// const getDescript = descript => {
+//     const p = document.createElement("p");
+//     p.textContent = descript;
+//     return p;
+// }
 
 
-const getLi = data => {
-    const li = document.createElement("li");
-    li.textContent = data;
-    return li;
-};
+// const getLi = data => {
+//     const li = document.createElement("li");
+//     li.textContent = data;
+//     return li;
+// };
 
 
 
