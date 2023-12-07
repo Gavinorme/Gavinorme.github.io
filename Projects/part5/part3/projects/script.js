@@ -84,7 +84,7 @@ const displayDetails = (project) =>
 
 
 const deleteProject = async (project) => {
-    let response = await fetch(`http://localhost:3000/api/projects/${project.id}`, { //fix
+    let response = await fetch(`http://localhost:3000/api/projects/${project.id}`, { //id could be wrong
         method: "DELETE",
         headers: {
             "Content-Type": "application/json;charset=utf-8",
@@ -117,7 +117,7 @@ const addProject = async (e) =>
     const formData = new FormData(form);
     let response;
 
-    //new player
+    //new project
     if(form._id.value == -1) {
         formData.delete("_id");
         // console.log(...formData);
@@ -128,7 +128,7 @@ const addProject = async (e) =>
         });
     }
 
-        else { //existing player
+        else { //existing project
             response = await fetch(`http://localhost:3000/api/projects/${form._id.value}`,{
                 method: "PUT",
                 body: formData,
@@ -143,7 +143,7 @@ const addProject = async (e) =>
     //in edit mode
     if(form._id.value != -1)
     {
-        //get the player with the indicated id
+        //get the project with the indicated id
         //then display
         displayDetails(project);
     }
@@ -167,64 +167,6 @@ const showHideAdd = (e) => {
 };
 
 
-
-
-
-// const getProjectItem = (project) => 
-// {
-//     let section = document.createElement("section");
-
-//     //link
-//     let h4 = document.createElement("a");
-//     section.append(h4);
-//     h4.href = project.a;
-//     h4.classList.add("link");
-//     //text
-//     let p = document.createElement("p");
-//     h4.append(p);
-//     p.append(getTitle(project.title));
-//     //link
-//     let h3 = document.createElement("a");
-//     section.append(h3);
-//     h3.href = project.a;
-//     h3.classList.add("link");
-//     //images
-//     let h2 = document.createElement("img");
-//     h2.src = project.img;
-//     h2.classList.add("image");
-//     h3.append(h2);
-//     //descript
-//     p.classList.add("descript");
-//     p.append(getDescript(project.descript));
-
-//     return section;
-// };
-
-// const getTitle = title => {
-//     const h1 = document.createElement("h1");
-//     h1.textContent = title;
-//     return h1;
-// }
-
-// const getDescript = descript => {
-//     const p = document.createElement("p");
-//     p.textContent = descript;
-//     return p;
-// }
-
-
-// const getLi = data => {
-//     const li = document.createElement("li");
-//     li.textContent = data;
-//     return li;
-// };
-
-
-
-
-
-
-
 window.onload = () => 
 {
     showProjects();
@@ -237,5 +179,4 @@ window.onload = () =>
     };
     
     document.getElementById("hamburger").onclick = toggleNav;
-    // showProjects();
 }
